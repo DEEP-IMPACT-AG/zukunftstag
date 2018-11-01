@@ -1,0 +1,2553 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Zukunftstag bei Deep Impact!</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+	 crossorigin="anonymous">
+	<link rel="stylesheet" href="./emoji-bibliothek.css" />
+	<link rel="stylesheet" href="../global.css" />
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+	 crossorigin="anonymous"></script>
+	<script src="./emoji-bibliothek.js" type="application/javascript"></script>
+</head>
+
+<body>
+	<div class="content">
+		
+		<nav aria-label="breadcrumb" class="mt-2">
+			<ol class="breadcrumb">
+				<li class="breadcrumb-item" aria-current="page"><a href="../index.html">Übersicht</a></li>
+				<li class="breadcrumb-item active" aria-current="page">Emoji Bibliothek</li>
+			</ol>
+		</nav>
+		
+		<h1 class="display-1 text-center my-4">Emoji Bibliothek</h1>
+
+		<ul class="nav nav-tabs" id="myTab" role="tablist">
+			<li class="nav-item">
+				<a class="nav-link active" id="emojis-tab" data-toggle="tab" href="#emojis" role="tab" aria-controls="emojis"
+				 aria-selected="true">Emojis</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" id="emoji-search-tab" data-toggle="tab" href="#emoji-search" role="tab" aria-controls="emoji-search"
+				 aria-selected="false">Emoji Suche</a>
+			</li>
+		</ul>
+		<div class="tab-content" id="myTabContent">
+			<div class="tab-pane fade" id="emoji-search" role="tabpanel" aria-labelledby="emoji-search-tab">
+				<!-- Start Emojisucheingabe -->
+				<div class="input-group my-3">
+					<input type="text" class="form-control" id="emoji-query" placeholder="Suchberiff in Englisch (z.B. heart für Herz)">
+					<div class="input-group-append">
+						<button type="button" class="btn btn-primary" id="emoji-search">Suche Emoji</button>
+					</div>
+				</div>
+
+				<!-- Ende Emojisucheingabe -->
+				<div id="emoji-search-results">
+				</div>
+			</div>
+			<div class="tab-pane fade show active" id="emojis" role="tabpanel" aria-labelledby="emojis-tab">
+				<!-- Start Emojisuchresultate -->
+				<div id="emoji-results">
+					<div class="emoji" title="two hearts">💕</div>
+					<div class="emoji" title="poop">💩</div>
+					<div class="emoji" title="unicorn face">🦄</div>
+					<div class="emoji" title="hugging face">🤗</div>
+					<div class="emoji" title="gun">🔫</div>
+					<div class="emoji" title="bacon">🥓</div>
+					<div class="emoji" title="うんち">💩</div>
+					<div class="emoji" title="hamburger">🍔</div>
+					<div class="emoji" title="ピザ">🍕</div>
+					<div class="emoji" title="clown face">🤡</div>
+					<div class="emoji" title="bunny girl">👯</div>
+					<div class="emoji" title="taco">🌮</div>
+					<div class="emoji" title="custard">🍮</div>
+					<div class="emoji" title="ブリトー">🌯</div>
+					<div class="emoji" title="タクシー">🚕</div>
+					<div class="emoji" title="heart">❤</div>
+					<div class="emoji" title="ドキドキしているハート">💓</div>
+					<div class="emoji" title="zebra">🦓</div>
+					<div class="emoji" title="sob">😭</div>
+					<div class="emoji" title="魚">🐟</div>
+					<div class="emoji" title="birthday">🎂</div>
+					<div class="emoji" title="revolving hearts">💞</div>
+					<div class="emoji" title="ハンバーガー">🍔</div>
+					<div class="emoji" title="clinking glasses">🥂</div>
+					<div class="emoji" title="black heart">🖤</div>
+					<div class="emoji" title="falafel">🥙</div>
+					<div class="emoji" title="シャムロック">☘</div>
+					<div class="emoji" title="stuck out tongue">😛</div>
+					<div class="emoji" title="shopping trolley">🛒</div>
+					<div class="emoji" title="lemon">🍋</div>
+					<div class="emoji" title="ankh">☥</div>
+					<div class="emoji" title="sparkling heart">💖</div>
+					<div class="emoji" title="dove of peace">🕊</div>
+					<div class="emoji" title="eggplant">🍆</div>
+					<div class="emoji" title="gorilla">🦍</div>
+					<div class="emoji" title="squid">🦑</div>
+					<div class="emoji" title="dancer">💃</div>
+					<div class="emoji" title="bat">🦇</div>
+					<div class="emoji" title="18禁">🔞</div>
+					<div class="emoji" title="ハート2">❤</div>
+					<div class="emoji" title="red car">🚗</div>
+					<div class="emoji" title="ラブレター">💌</div>
+					<div class="emoji" title="肉">🍖</div>
+					<div class="emoji" title="moyai">🗿</div>
+					<div class="emoji" title="ドクロ">💀</div>
+					<div class="emoji" title="バラ">🌹</div>
+					<div class="emoji" title="pill">💊</div>
+					<div class="emoji" title="jack o lantern">🎃</div>
+					<div class="emoji" title="2つのハート">💕</div>
+					<div class="emoji" title="ベーコン">🥓</div>
+					<div class="emoji" title="穴">🕳</div>
+					<div class="emoji" title="T">🇹</div>
+					<div class="emoji" title="bangbang">‼</div>
+					<div class="emoji" title="butterfly">🦋</div>
+					<div class="emoji" title="fire">🔥</div>
+					<div class="emoji" title="人工衛星">🛰</div>
+					<div class="emoji" title="smile cat">😸</div>
+					<div class="emoji" title="8時">🕗</div>
+					<div class="emoji" title="星(黒)">★</div>
+					<div class="emoji" title="yin and yang">☯</div>
+					<div class="emoji" title="bird">🐦</div>
+					<div class="emoji" title="blush">😊</div>
+					<div class="emoji" title="竜脚類恐竜">🦕</div>
+					<div class="emoji" title="heartbeat">💓</div>
+					<div class="emoji" title="beamed sixteenth notes">♬</div>
+					<div class="emoji" title="旗(白)">🏳</div>
+					<div class="emoji" title="7時">🕖</div>
+					<div class="emoji" title="deciduous tree">🌳</div>
+					<div class="emoji" title="パイナップル">🍍</div>
+					<div class="emoji" title="mag right">🔎</div>
+					<div class="emoji" title="hammer and sickle">☭</div>
+					<div class="emoji" title="箸">🥢</div>
+					<div class="emoji" title="チーズ">🧀</div>
+					<div class="emoji" title="black chess knight">♞</div>
+					<div class="emoji" title="black joker">🃏</div>
+					<div class="emoji" title="joy">😂</div>
+					<div class="emoji" title="rice scene">🎑</div>
+					<div class="emoji" title="first quarter moon symbol">🌓</div>
+					<div class="emoji" title="tumbler glass">🥃</div>
+					<div class="emoji" title="顔月(上弦の月)">🌛</div>
+					<div class="emoji" title="顔月(下弦の月)">🌜</div>
+					<div class="emoji" title="money mouth face">🤑</div>
+					<div class="emoji" title="sun with face">🌞</div>
+					<div class="emoji" title="eyes">👀</div>
+					<div class="emoji" title="milky way">🌌</div>
+					<div class="emoji" title="十八夜">🌖</div>
+					<div class="emoji" title="二十六夜">🌘</div>
+					<div class="emoji" title="三日月2">🌙</div>
+					<div class="emoji" title="顔月(新月)">🌚</div>
+					<div class="emoji" title="顔月(満月)">🌝</div>
+					<div class="emoji" title="rice cracker">🍘</div>
+					<div class="emoji" title="rice ball">🍙</div>
+					<div class="emoji" title="man">👨</div>
+					<div class="emoji" title="bomb">💣</div>
+					<div class="emoji" title="camera">📷</div>
+					<div class="emoji" title="om symbol">🕉</div>
+					<div class="emoji" title="synagogue">🕍</div>
+					<div class="emoji" title="fencer">🤺</div>
+					<div class="emoji" title="shark">🦈</div>
+					<div class="emoji" title="fox face">🦊</div>
+					<div class="emoji" title="frosty">☃</div>
+					<div class="emoji" title="lizard">🦎</div>
+					<div class="emoji" title="cricket">🦗</div>
+					<div class="emoji" title="latin cross">✝</div>
+					<div class="emoji" title="socks">🧦</div>
+					<div class="emoji" title="billed cap">🧢</div>
+					<div class="emoji" title="speaking head in silhouette">🗣</div>
+					<div class="emoji" title="飛行機">✈</div>
+					<div class="emoji" title="cyclone">🌀</div>
+					<div class="emoji" title="family">👪</div>
+					<div class="emoji" title="車">🚗</div>
+					<div class="emoji" title="gift heart">💝</div>
+					<div class="emoji" title="ブタの鼻">🐽</div>
+					<div class="emoji" title="robot face">🤖</div>
+					<div class="emoji" title="すし">🍣</div>
+					<div class="emoji" title="comet">☄</div>
+					<div class="emoji" title="うまい">😋</div>
+					<div class="emoji" title="blue heart">💙</div>
+					<div class="emoji" title="burrito">🌯</div>
+					<div class="emoji" title="heart eyes cat">😻</div>
+					<div class="emoji" title="祝日">🎌</div>
+					<div class="emoji" title="womens">🚺</div>
+					<div class="emoji" title="リップスティック">💄</div>
+					<div class="emoji" title="マル秘">㊙</div>
+					<div class="emoji" title="spades">♠</div>
+					<div class="emoji" title="神社">⛩</div>
+					<div class="emoji" title="waving black flag">🏴</div>
+					<div class="emoji" title="こいのぼり">🎏</div>
+					<div class="emoji" title="回るハート">💞</div>
+					<div class="emoji" title="sparkles">✨</div>
+					<div class="emoji" title="中丸(白)">⚪</div>
+					<div class="emoji" title="cool">🆒</div>
+					<div class="emoji" title="抱き締め">🤗</div>
+					<div class="emoji" title="deer">🦌</div>
+					<div class="emoji" title="陰陽">☯</div>
+					<div class="emoji" title="マフラ">🧣</div>
+					<div class="emoji" title="パトカー2">🚔</div>
+					<div class="emoji" title="噴水">⛲</div>
+					<div class="emoji" title="thumbsup">👍</div>
+					<div class="emoji" title="山">⛰</div>
+					<div class="emoji" title="新幹線2">🚅</div>
+					<div class="emoji" title="bike">🚲</div>
+					<div class="emoji" title="sushi">🍣</div>
+					<div class="emoji" title="guitar">🎸</div>
+					<div class="emoji" title="雷雨">☈</div>
+					<div class="emoji" title="building construction">🏗</div>
+					<div class="emoji" title="ユニコーン">🦄</div>
+					<div class="emoji" title="ピストル">🔫</div>
+					<div class="emoji" title="white medium star">⭐</div>
+					<div class="emoji" title="フェリー">⛴</div>
+					<div class="emoji" title="十字架">✝</div>
+					<div class="emoji" title="男性マーク">🚹</div>
+					<div class="emoji" title="バイオハザード">☣</div>
+					<div class="emoji" title="雨雲">🌧</div>
+					<div class="emoji" title="風船">🎈</div>
+					<div class="emoji" title="核マーク">☢</div>
+					<div class="emoji" title="curry">🍛</div>
+					<div class="emoji" title="santa">🎅</div>
+					<div class="emoji" title="鍵">🔑</div>
+					<div class="emoji" title="隕石">☄</div>
+					<div class="emoji" title="レーシングバイク">🏍</div>
+					<div class="emoji" title="RV車">🚙</div>
+					<div class="emoji" title="靴下">🧦</div>
+					<div class="emoji" title="エルサレム十字">☩</div>
+					<div class="emoji" title="メノラー">🕎</div>
+					<div class="emoji" title="シマウマ">🦓</div>
+					<div class="emoji" title="爆弾">💣</div>
+					<div class="emoji" title="包丁">🔪</div>
+					<div class="emoji" title="にんまり">😀</div>
+					<div class="emoji" title="昇交点">☊</div>
+					<div class="emoji" title="降交点">☋</div>
+					<div class="emoji" title="八卦の乾">☰</div>
+					<div class="emoji" title="天王星">♅</div>
+					<div class="emoji" title="smirk cat">😼</div>
+					<div class="emoji" title="桃">🍑</div>
+					<div class="emoji" title="menorah">🕎</div>
+					<div class="emoji" title="土星">♄</div>
+					<div class="emoji" title="レーシングカー">🏎</div>
+					<div class="emoji" title="oncoming police car">🚔</div>
+					<div class="emoji" title="卵">🥚</div>
+					<div class="emoji" title="arrow heading up">⤴</div>
+					<div class="emoji" title="martial arts uniform">🥋</div>
+					<div class="emoji" title="家(庭付き)">🏡</div>
+					<div class="emoji" title="コンビニ">🏪</div>
+					<div class="emoji" title="デパート">🏬</div>
+					<div class="emoji" title="スピーカー">🔈</div>
+					<div class="emoji" title="電車">🚆</div>
+					<div class="emoji" title="警告マーク">☡</div>
+					<div class="emoji" title="male with stroke and male and female sign">⚧</div>
+					<div class="emoji" title="airplane">✈</div>
+					<div class="emoji" title="ハート(赤)">❤</div>
+					<div class="emoji" title="ソフトドリンク">🥤</div>
+					<div class="emoji" title="クリアマーク">🆑</div>
+					<div class="emoji" title="Venus">♀</div>
+					<div class="emoji" title="art">🎨</div>
+					<div class="emoji" title="dart">🎯</div>
+					<div class="emoji" title="8ball">🎱</div>
+					<div class="emoji" title="railway car">🚃</div>
+					<div class="emoji" title="新幹線">🚄</div>
+					<div class="emoji" title="blue car">🚙</div>
+					<div class="emoji" title="リサイクルマーク2">♻</div>
+					<div class="emoji" title="ピエロ">🤡</div>
+					<div class="emoji" title="avocado">🥑</div>
+					<div class="emoji" title="ドネルケバブ">🥙</div>
+					<div class="emoji" title="scorpion">🦂</div>
+					<div class="emoji" title="ATM">🏧</div>
+					<div class="emoji" title="王冠">👑</div>
+					<div class="emoji" title="funeral urn">⚱</div>
+					<div class="emoji" title="soccer">⚽</div>
+					<div class="emoji" title="合">☌</div>
+					<div class="emoji" title="渋面">☹</div>
+					<div class="emoji" title="顔太陽">🌞</div>
+					<div class="emoji" title="笑い">😆</div>
+					<div class="emoji" title="ふっ">😏</div>
+					<div class="emoji" title="教会">⛪</div>
+					<div class="emoji" title="礼拝所">🛐</div>
+					<div class="emoji" title="OK">🙆</div>
+					<div class="emoji" title="晴れ">☀</div>
+					<div class="emoji" title="曇り">☁</div>
+					<div class="emoji" title="上弦の月(白)">☽</div>
+					<div class="emoji" title="花矢印左">☙</div>
+					<div class="emoji" title="キーロー">☧</div>
+					<div class="emoji" title="八卦の離">☲</div>
+					<div class="emoji" title="クイーン(白)">♕</div>
+					<div class="emoji" title="ルーク(白)">♖</div>
+					<div class="emoji" title="ナイト(白)">♘</div>
+					<div class="emoji" title="ポーン(白)">♙</div>
+					<div class="emoji" title="フラット">♭</div>
+					<div class="emoji" title="一時停止">🛑</div>
+					<div class="emoji" title="seedling">🌱</div>
+					<div class="emoji" title="hibiscus">🌺</div>
+					<div class="emoji" title="crocodile">🐊</div>
+					<div class="emoji" title="copyright">©</div>
+					<div class="emoji" title="russian cross">☦</div>
+					<div class="emoji" title="shinto shrine">⛩</div>
+					<div class="emoji" title="atm">🏧</div>
+					<div class="emoji" title="Leo">♌</div>
+					<div class="emoji" title="recycling symbol for type 7 plastics">♹</div>
+					<div class="emoji" title="下弦の月">🌗</div>
+					<div class="emoji" title="虹">🌈</div>
+					<div class="emoji" title="花">🌼</div>
+					<div class="emoji" title="nose">👃</div>
+					<div class="emoji" title="notebook with decorative cover">📔</div>
+					<div class="emoji" title="本(緑)">📗</div>
+					<div class="emoji" title="wink">😉</div>
+					<div class="emoji" title="smirk">😏</div>
+					<div class="emoji" title="涙">😢</div>
+					<div class="emoji" title="L">🇱</div>
+					<div class="emoji" title="M">🇲</div>
+					<div class="emoji" title="火星">♂</div>
+					<div class="emoji" title="globe with meridians">🌐</div>
+					<div class="emoji" title="cloud with tornado">🌪</div>
+					<div class="emoji" title="derelict house building">🏚</div>
+					<div class="emoji" title="european post office">🏤</div>
+					<div class="emoji" title="ヨーロッパの城">🏰</div>
+					<div class="emoji" title="歩行者通行止め">🚷</div>
+					<div class="emoji" title="ガソリンスタンド">⛽</div>
+					<div class="emoji" title="classical building">🏛</div>
+					<div class="emoji" title="signal strength">📶</div>
+					<div class="emoji" title="ココナツ">🥥</div>
+					<div class="emoji" title="山の日の出">🌄</div>
+					<div class="emoji" title="city sunset">🌇</div>
+					<div class="emoji" title="ボトルワイン">🍾</div>
+					<div class="emoji" title="ポップコーン">🍿</div>
+					<div class="emoji" title="racing car">🏎</div>
+					<div class="emoji" title="house buildings">🏘</div>
+					<div class="emoji" title="ラブホテル">🏩</div>
+					<div class="emoji" title="日本の城">🏯</div>
+					<div class="emoji" title="指差し2(上)">👆</div>
+					<div class="emoji" title="heartpulse">💗</div>
+					<div class="emoji" title="レンチ">🔧</div>
+					<div class="emoji" title="顕微鏡">🔬</div>
+					<div class="emoji" title="望遠鏡">🔭</div>
+					<div class="emoji" title="ロシア十字">☦</div>
+					<div class="emoji" title="ファラフェル">🥙</div>
+					<div class="emoji" title="微しかめっ顔">🙁</div>
+					<div class="emoji" title="次トラックボタン">⏭</div>
+					<div class="emoji" title="キャップ">🧢</div>
+					<div class="emoji" title="NEWマーク">🆕</div>
+					<div class="emoji" title="A">🇦</div>
+					<div class="emoji" title="B">🇧</div>
+					<div class="emoji" title="stars">🌠</div>
+					<div class="emoji" title="cooking">🍳</div>
+					<div class="emoji" title="eye">👁</div>
+					<div class="emoji" title="ear">👂</div>
+					<div class="emoji" title="Earth">♁</div>
+					<div class="emoji" title="man dancing">🕺</div>
+					<div class="emoji" title="grinning">😀</div>
+					<div class="emoji" title="卓球">🏓</div>
+					<div class="emoji" title="amphora">🏺</div>
+					<div class="emoji" title="imp">👿</div>
+					<div class="emoji" title="cd">💿</div>
+					<div class="emoji" title="数珠">📿</div>
+					<div class="emoji" title="金欲顔">🤑</div>
+					<div class="emoji" title="wrestlers">🤼</div>
+					<div class="emoji" title="o">⭕</div>
+					<div class="emoji" title="kaaba">🕋</div>
+					<div class="emoji" title="mosque">🕌</div>
+					<div class="emoji" title="衝">☍</div>
+					<div class="emoji" title="七面鳥">🦃</div>
+					<div class="emoji" title="cheese wedge">🧀</div>
+					<div class="emoji" title="field hockey stick and ball">🏑</div>
+					<div class="emoji" title="table tennis paddle and ball">🏓</div>
+					<div class="emoji" title="white check mark">✅</div>
+					<div class="emoji" title="嘔吐">🤮</div>
+					<div class="emoji" title="arrows clockwise">🔃</div>
+					<div class="emoji" title="low brightness">🔅</div>
+					<div class="emoji" title="high brightness">🔆</div>
+					<div class="emoji" title="lock with ink pen">🔏</div>
+					<div class="emoji" title="上向き三角3">🔺</div>
+					<div class="emoji" title="下向き三角3">🔻</div>
+					<div class="emoji" title="上向き三角">🔼</div>
+					<div class="emoji" title="arrow up small">🔼</div>
+					<div class="emoji" title="下向き三角">🔽</div>
+					<div class="emoji" title="mantelpiece clock">🕰</div>
+					<div class="emoji" title="ビジネススーツ">🕴</div>
+					<div class="emoji" title="dark sunglasses">🕶</div>
+					<div class="emoji" title="linked paperclips">🖇</div>
+					<div class="emoji" title="lower left crayon">🖍</div>
+					<div class="emoji" title="reversed raised hand with fingers splayed">🖑</div>
+					<div class="emoji" title="middle finger">🖕</div>
+					<div class="emoji" title="指差し(下)">👇</div>
+					<div class="emoji" title="指差し(左)">👈</div>
+					<div class="emoji" title="指差し(右)">👉</div>
+					<div class="emoji" title="指差し(上)">☝</div>
+					<div class="emoji" title="desktop computer">🖥</div>
+					<div class="emoji" title="three button mouse">🖱</div>
+					<div class="emoji" title="トラックボール">🖲</div>
+					<div class="emoji" title="frame with picture">🖼</div>
+					<div class="emoji" title="card index dividers">🗂</div>
+					<div class="emoji" title="キャビネット">🗄</div>
+					<div class="emoji" title="リングメモ帳">🗒</div>
+					<div class="emoji" title="spiral note pad">🗒</div>
+					<div class="emoji" title="リングカレンダー">🗓</div>
+					<div class="emoji" title="spiral calendar pad">🗓</div>
+					<div class="emoji" title="ニュース">🗞</div>
+					<div class="emoji" title="フキダシ3">🗨</div>
+					<div class="emoji" title="フキダシ9">🗯</div>
+					<div class="emoji" title="フキダシ10">🗯</div>
+					<div class="emoji" title="世界地図">🗺</div>
+					<div class="emoji" title="statue of liberty">🗽</div>
+					<div class="emoji" title="ほっとした顔">😌</div>
+					<div class="emoji" title="ぼけーっとした顔">😑</div>
+					<div class="emoji" title="kissing smiling eyes">😙</div>
+					<div class="emoji" title="kissing closed eyes">😚</div>
+					<div class="emoji" title="あっかんべー">😜</div>
+					<div class="emoji" title="disappointed relieved">😥</div>
+					<div class="emoji" title="ショッキング">😱</div>
+					<div class="emoji" title="うっしっし(ネコ)">😸</div>
+					<div class="emoji" title="泣き笑い(ネコ)">😹</div>
+					<div class="emoji" title="目がハート(ネコ)">😻</div>
+					<div class="emoji" title="きりり(ネコ)">😼</div>
+					<div class="emoji" title="チュー(ネコ)">😽</div>
+					<div class="emoji" title="涙ぽろり(ネコ)">😿</div>
+					<div class="emoji" title="crying cat face">😿</div>
+					<div class="emoji" title="ほえー(ネコ)">🙀</div>
+					<div class="emoji" title="見ざる">🙈</div>
+					<div class="emoji" title="聞かざる">🙉</div>
+					<div class="emoji" title="言わざる">🙊</div>
+					<div class="emoji" title="raising hand">🙋</div>
+					<div class="emoji" title="バンザイ">🙌</div>
+					<div class="emoji" title="raised hands">🙌</div>
+					<div class="emoji" title="お願い">🙏</div>
+					<div class="emoji" title="ロケット">🚀</div>
+					<div class="emoji" title="helicopter">🚁</div>
+					<div class="emoji" title="鉄道車両">🚃</div>
+					<div class="emoji" title="地下鉄">🚇</div>
+					<div class="emoji" title="軽便鉄道">🚈</div>
+					<div class="emoji" title="light rail">🚈</div>
+					<div class="emoji" title="路面電車">🚊</div>
+					<div class="emoji" title="路面電車2">🚋</div>
+					<div class="emoji" title="tram car">🚋</div>
+					<div class="emoji" title="oncoming bus">🚍</div>
+					<div class="emoji" title="trolleybus">🚎</div>
+					<div class="emoji" title="バス停">🚏</div>
+					<div class="emoji" title="救急車">🚑</div>
+					<div class="emoji" title="ambulance">🚑</div>
+					<div class="emoji" title="消防車">🚒</div>
+					<div class="emoji" title="fire engine">🚒</div>
+					<div class="emoji" title="パトカー">🚓</div>
+					<div class="emoji" title="police car">🚓</div>
+					<div class="emoji" title="タクシー2">🚖</div>
+					<div class="emoji" title="oncoming taxi">🚖</div>
+					<div class="emoji" title="トラック">🚚</div>
+					<div class="emoji" title="登山鉄道">🚞</div>
+					<div class="emoji" title="高架鉄道">🚟</div>
+					<div class="emoji" title="ボート">🚣</div>
+					<div class="emoji" title="speedboat">🚤</div>
+					<div class="emoji" title="パトカーのランプ">🚨</div>
+					<div class="emoji" title="位置情報">🚩</div>
+					<div class="emoji" title="ポイ捨て禁止">🚯</div>
+					<div class="emoji" title="do not litter">🚯</div>
+					<div class="emoji" title="potable water">🚰</div>
+					<div class="emoji" title="自転車">🚲</div>
+					<div class="emoji" title="駐輪禁止">🚳</div>
+					<div class="emoji" title="ロードレーサー">🚵</div>
+					<div class="emoji" title="mountain bicyclist">🚵</div>
+					<div class="emoji" title="ウォーキング">🚶</div>
+					<div class="emoji" title="no pedestrains">🚷</div>
+					<div class="emoji" title="children crossing">🚸</div>
+					<div class="emoji" title="女性マーク">🚺</div>
+					<div class="emoji" title="公衆トイレ">🚻</div>
+					<div class="emoji" title="baby symbol">🚼</div>
+					<div class="emoji" title="トイレマーク">🚾</div>
+					<div class="emoji" title="入国審査">🛂</div>
+					<div class="emoji" title="passport control">🛂</div>
+					<div class="emoji" title="手荷物受取所">🛄</div>
+					<div class="emoji" title="baggage claim">🛄</div>
+					<div class="emoji" title="left luggage">🛅</div>
+					<div class="emoji" title="information source">ℹ</div>
+					<div class="emoji" title="左右向き矢印">↔</div>
+					<div class="emoji" title="上下向き矢印">↕</div>
+					<div class="emoji" title="up down arrow">↕</div>
+					<div class="emoji" title="回り矢印">↩</div>
+					<div class="emoji" title="回り矢印2">↪</div>
+					<div class="emoji" title="右向き三角2">⏩</div>
+					<div class="emoji" title="fast forward">⏩</div>
+					<div class="emoji" title="左向き三角2">⏪</div>
+					<div class="emoji" title="上向き三角2">⏫</div>
+					<div class="emoji" title="arrow double up">⏫</div>
+					<div class="emoji" title="下向き三角2">⏬</div>
+					<div class="emoji" title="目覚まし時計">⏰</div>
+					<div class="emoji" title="小四角(黒)">▪</div>
+					<div class="emoji" title="小四角(白)">▫</div>
+					<div class="emoji" title="右向き三角">▶</div>
+					<div class="emoji" title="arrow forward">▶</div>
+					<div class="emoji" title="左向き三角">◀</div>
+					<div class="emoji" title="arrow backward">◀</div>
+					<div class="emoji" title="大四角(白)">◻</div>
+					<div class="emoji" title="大四角(黒)">◼</div>
+					<div class="emoji" title="中四角(白)">◽</div>
+					<div class="emoji" title="中四角(黒)">◾</div>
+					<div class="emoji" title="umbrella">☂</div>
+					<div class="emoji" title="point up">☝</div>
+					<div class="emoji" title="車椅子マーク">♿</div>
+					<div class="emoji" title="いかり">⚓</div>
+					<div class="emoji" title="white circle">⚪</div>
+					<div class="emoji" title="black circle">⚫</div>
+					<div class="emoji" title="立ち入り禁止">⛔</div>
+					<div class="emoji" title="raised hand">✋</div>
+					<div class="emoji" title="ダビデの星">✡</div>
+					<div class="emoji" title="star of david">✡</div>
+					<div class="emoji" title="キラキラ">✨</div>
+					<div class="emoji" title="スパーク">❇</div>
+					<div class="emoji" title="grey exclamation">❕</div>
+					<div class="emoji" title="右向き矢印">➡</div>
+					<div class="emoji" title="arrow right">➡</div>
+					<div class="emoji" title="左向き矢印">⬅</div>
+					<div class="emoji" title="上向き矢印">⬆</div>
+					<div class="emoji" title="下向き矢印">⬇</div>
+					<div class="emoji" title="特大四角(黒)">⬛</div>
+					<div class="emoji" title="特大四角(白)">⬜</div>
+					<div class="emoji" title="congratulation">㊗</div>
+					<div class="emoji" title="ジョリー・ロジャー">☠</div>
+					<div class="emoji" title="skull and crossbones">☠</div>
+					<div class="emoji" title="cross of lorraine">☨</div>
+					<div class="emoji" title="cross of jerusalem">☩</div>
+					<div class="emoji" title="star and crescent">☪</div>
+					<div class="emoji" title="アディ・シャクティ">☬</div>
+					<div class="emoji" title="trigram for heaven">☰</div>
+					<div class="emoji" title="trigram for thunder">☳</div>
+					<div class="emoji" title="trigram for water">☵</div>
+					<div class="emoji" title="trigram for mountain">☶</div>
+					<div class="emoji" title="trigram for earth">☷</div>
+					<div class="emoji" title="white sun with rays">☼</div>
+					<div class="emoji" title="white chess queen">♕</div>
+					<div class="emoji" title="white chess bishop">♗</div>
+					<div class="emoji" title="white chess knight">♘</div>
+					<div class="emoji" title="black chess queen">♛</div>
+					<div class="emoji" title="black chess bishop">♝</div>
+					<div class="emoji" title="music natural sign">♮</div>
+					<div class="emoji" title="リサイクルマーク1">♺</div>
+					<div class="emoji" title="recycled paper symbol">♼</div>
+					<div class="emoji" title="圧縮再生紙マーク">♽</div>
+					<div class="emoji" title="monogram for yang">⚊</div>
+					<div class="emoji" title="digram for greater yang">⚌</div>
+					<div class="emoji" title="digram for lesser yin">⚍</div>
+					<div class="emoji" title="digram for lesser yang">⚎</div>
+					<div class="emoji" title="digram for greater yin">⚏</div>
+					<div class="emoji" title="アスクレピオスの杖">⚕</div>
+					<div class="emoji" title="staff of aesculapius">⚕</div>
+					<div class="emoji" title="フルール・ド・リス">⚜</div>
+					<div class="emoji" title="doubled female sign">⚢</div>
+					<div class="emoji" title="doubled male sign">⚣</div>
+					<div class="emoji" title="male and female sign">⚥</div>
+					<div class="emoji" title="トランスジェンダー">⚦</div>
+					<div class="emoji" title="male with stroke sign">⚦</div>
+					<div class="emoji" title="パンジェンダー">⚧</div>
+					<div class="emoji" title="錬金術(硫化第1鉄)">⚨</div>
+					<div class="emoji" title="umbrella on ground">⛱</div>
+					<div class="emoji" title="cricket bat and ball">🏏</div>
+					<div class="emoji" title="駐車場">🅿</div>
+					<div class="emoji" title="IDマーク">🆔</div>
+					<div class="emoji" title="NGマーク">🆖</div>
+					<div class="emoji" title="OKマーク">🆗</div>
+					<div class="emoji" title="SOSマーク">🆘</div>
+					<div class="emoji" title="UPマーク">🆙</div>
+					<div class="emoji" title="VSマーク">🆚</div>
+					<div class="emoji" title="city dusk">🌆</div>
+					<div class="emoji" title="ワイン">🍷</div>
+					<div class="emoji" title="wine glass">🍷</div>
+					<div class="emoji" title="mortar board">🎓</div>
+					<div class="emoji" title="love hotel">🏩</div>
+					<div class="emoji" title="ダンサー">💃</div>
+					<div class="emoji" title="大丸(赤)">🔴</div>
+					<div class="emoji" title="red circle">🔴</div>
+					<div class="emoji" title="大丸(青)">🔵</div>
+					<div class="emoji" title="sleuth or spy">🕵</div>
+					<div class="emoji" title="クモの巣">🕸</div>
+					<div class="emoji" title="spider web">🕸</div>
+					<div class="emoji" title="thinking face">🤔</div>
+					<div class="emoji" title="吐き気">🤢</div>
+					<div class="emoji" title="rolling on the floor laughing">🤣</div>
+					<div class="emoji" title="よだれ">🤤</div>
+					<div class="emoji" title="drooling face">🤤</div>
+					<div class="emoji" title="うそつき顔">🤥</div>
+					<div class="emoji" title="lying face">🤥</div>
+					<div class="emoji" title="wilted flower">🥀</div>
+					<div class="emoji" title="croissant">🥐</div>
+					<div class="emoji" title="キュウリ">🥒</div>
+					<div class="emoji" title="cucumber">🥒</div>
+					<div class="emoji" title="potato">🥔</div>
+					<div class="emoji" title="ニンジン">🥕</div>
+					<div class="emoji" title="carrot">🥕</div>
+					<div class="emoji" title="カニ">🦀</div>
+					<div class="emoji" title="crab">🦀</div>
+					<div class="emoji" title="ライオン">🦁</div>
+					<div class="emoji" title="lion face">🦁</div>
+					<div class="emoji" title="ワシ">🦅</div>
+					<div class="emoji" title="eagle">🦅</div>
+					<div class="emoji" title="アヒル">🦆</div>
+					<div class="emoji" title="duck">🦆</div>
+					<div class="emoji" title="コウモリ">🦇</div>
+					<div class="emoji" title="サメ">🦈</div>
+					<div class="emoji" title="フクロウ">🦉</div>
+					<div class="emoji" title="owl">🦉</div>
+					<div class="emoji" title="キツネ">🦊</div>
+					<div class="emoji" title="registered">®</div>
+					<div class="emoji" title="interrobang">⁉</div>
+					<div class="emoji" title="Mマーク">Ⓜ️</div>
+					<div class="emoji" title="雪だるま">⛄</div>
+					<div class="emoji" title="中星(白)">⭐</div>
+					<div class="emoji" title="descending node">☋</div>
+					<div class="emoji" title="coffee">☕</div>
+					<div class="emoji" title="black shogi piece">☗</div>
+					<div class="emoji" title="ロレーヌ十字">☨</div>
+					<div class="emoji" title="ピースマーク">☮</div>
+					<div class="emoji" title="trigram for fire">☲</div>
+					<div class="emoji" title="trigram for wind">☴</div>
+					<div class="emoji" title="white chess pawn">♙</div>
+					<div class="emoji" title="black chess king">♚</div>
+					<div class="emoji" title="black chess rook">♜</div>
+					<div class="emoji" title="ビショップ(黒)">♝</div>
+					<div class="emoji" title="black chess pawn">♟</div>
+					<div class="emoji" title="スペード">♠</div>
+					<div class="emoji" title="二連八分音符">♬</div>
+					<div class="emoji" title="music flat sign">♭</div>
+					<div class="emoji" title="music sharp sign">♯</div>
+					<div class="emoji" title="西シリア十字">♰</div>
+					<div class="emoji" title="東シリア十字">♱</div>
+					<div class="emoji" title="リサイクルマーク(高密度ポリエチレン)">♴</div>
+					<div class="emoji" title="リサイクルマーク(その他プラスチック)">♹</div>
+					<div class="emoji" title="再生紙マーク">♼</div>
+					<div class="emoji" title="wheelchair">♿</div>
+					<div class="emoji" title="monogram for yin">⚋</div>
+					<div class="emoji" title="原子力マーク">⚛</div>
+					<div class="emoji" title="中丸(黒)">⚫</div>
+					<div class="emoji" title="hand with first and index finger crossed">🤞</div>
+					<div class="emoji" title="妊婦">🤰</div>
+					<div class="emoji" title="selfie">🤳</div>
+					<div class="emoji" title="王子様">🤴</div>
+					<div class="emoji" title="prince">🤴</div>
+					<div class="emoji" title="サンタクロース(母)">🤶</div>
+					<div class="emoji" title="mother christmas">🤶</div>
+					<div class="emoji" title="バゲット">🥖</div>
+					<div class="emoji" title="baguette bread">🥖</div>
+					<div class="emoji" title="グリーンサラダ">🥗</div>
+					<div class="emoji" title="green salad">🥗</div>
+					<div class="emoji" title="パエリア">🥘</div>
+					<div class="emoji" title="shallow pan of food">🥘</div>
+					<div class="emoji" title="サソリ">🦂</div>
+					<div class="emoji" title="電話して">🤙</div>
+					<div class="emoji" title="call me hand">🤙</div>
+					<div class="emoji" title="タコス">🌮</div>
+					<div class="emoji" title="圧縮">🗜</div>
+					<div class="emoji" title="lipstick">💄</div>
+					<div class="emoji" title="封筒">✉</div>
+					<div class="emoji" title="鉛筆">✏</div>
+					<div class="emoji" title="B型">🅱</div>
+					<div class="emoji" title="O型">🅾</div>
+					<div class="emoji" title="AB型">🆎</div>
+					<div class="emoji" title="台風">🌀</div>
+					<div class="emoji" title="夕日">🌇</div>
+					<div class="emoji" title="火山">🌋</div>
+					<div class="emoji" title="新月">🌑</div>
+					<div class="emoji" title="満月">🌕</div>
+					<div class="emoji" title="雪雲">🌨</div>
+					<div class="emoji" title="雷雲">🌩</div>
+					<div class="emoji" title="竜巻">🌪</div>
+					<div class="emoji" title="濃霧">🌫</div>
+					<div class="emoji" title="稲穂">🌾</div>
+					<div class="emoji" title="ナス">🍆</div>
+					<div class="emoji" title="食事">🍴</div>
+					<div class="emoji" title="お茶">🍵</div>
+					<div class="emoji" title="乾杯">🍻</div>
+					<div class="emoji" title="花火">🎆</div>
+					<div class="emoji" title="七夕">🎋</div>
+					<div class="emoji" title="門松">🎍</div>
+					<div class="emoji" title="風鈴">🎐</div>
+					<div class="emoji" title="卒業式">🎓</div>
+					<div class="emoji" title="勲章">🎖</div>
+					<div class="emoji" title="入場券">🎟</div>
+					<div class="emoji" title="観覧車">🎡</div>
+					<div class="emoji" title="釣り">🎣</div>
+					<div class="emoji" title="マイク">🎤</div>
+					<div class="emoji" title="映画">🎦</div>
+					<div class="emoji" title="演劇">🎭</div>
+					<div class="emoji" title="ダーツ">🎯</div>
+					<div class="emoji" title="花札">🎴</div>
+					<div class="emoji" title="音符">🎵</div>
+					<div class="emoji" title="ギター">🎸</div>
+					<div class="emoji" title="ピアノ">🎹</div>
+					<div class="emoji" title="楽譜">🎼</div>
+					<div class="emoji" title="テニス">🎾</div>
+					<div class="emoji" title="スキー">🎿</div>
+					<div class="emoji" title="メダル">🏅</div>
+					<div class="emoji" title="競馬">🏇</div>
+					<div class="emoji" title="雪山">🏔</div>
+					<div class="emoji" title="建設中">🏗</div>
+					<div class="emoji" title="廃屋">🏚</div>
+					<div class="emoji" title="砂漠">🏜</div>
+					<div class="emoji" title="病院">🏥</div>
+					<div class="emoji" title="銀行">🏦</div>
+					<div class="emoji" title="学校">🏫</div>
+					<div class="emoji" title="工場">🏭</div>
+					<div class="emoji" title="ラベル">🏷</div>
+					<div class="emoji" title="雄牛">🐂</div>
+					<div class="emoji" title="水牛">🐃</div>
+					<div class="emoji" title="乳牛">🐄</div>
+					<div class="emoji" title="トラ2">🐅</div>
+					<div class="emoji" title="ネコ2">🐈</div>
+					<div class="emoji" title="ワニ">🐊</div>
+					<div class="emoji" title="ヘビ">🐍</div>
+					<div class="emoji" title="ウマ">🐎</div>
+					<div class="emoji" title="牡羊">🐏</div>
+					<div class="emoji" title="ヤギ">🐐</div>
+					<div class="emoji" title="サル">🐒</div>
+					<div class="emoji" title="雄鶏">🐓</div>
+					<div class="emoji" title="イヌ2">🐕</div>
+					<div class="emoji" title="ブタ2">🐖</div>
+					<div class="emoji" title="ゾウ">🐘</div>
+					<div class="emoji" title="タコ">🐙</div>
+					<div class="emoji" title="巻貝">🐚</div>
+					<div class="emoji" title="アリ">🐜</div>
+					<div class="emoji" title="フグ">🐡</div>
+					<div class="emoji" title="カメ">🐢</div>
+					<div class="emoji" title="トリ">🐦</div>
+					<div class="emoji" title="ウシ">🐮</div>
+					<div class="emoji" title="トラ">🐯</div>
+					<div class="emoji" title="ネコ">🐱</div>
+					<div class="emoji" title="ウマ2">🐴</div>
+					<div class="emoji" title="サル2">🐵</div>
+					<div class="emoji" title="イヌ">🐶</div>
+					<div class="emoji" title="ブタ">🐷</div>
+					<div class="emoji" title="クマ">🐻</div>
+					<div class="emoji" title="メガネ">👓</div>
+					<div class="emoji" title="Tシャツ">👕</div>
+					<div class="emoji" title="ドレス">👗</div>
+					<div class="emoji" title="着物">👘</div>
+					<div class="emoji" title="ビキニ">👙</div>
+					<div class="emoji" title="婦人服">👚</div>
+					<div class="emoji" title="ポーチ">👝</div>
+					<div class="emoji" title="紳士靴">👞</div>
+					<div class="emoji" title="運動靴">👟</div>
+					<div class="emoji" title="ブーツ">👢</div>
+					<div class="emoji" title="足跡">👣</div>
+					<div class="emoji" title="人影">👤</div>
+					<div class="emoji" title="人影2">👥</div>
+					<div class="emoji" title="男の子">👦</div>
+					<div class="emoji" title="女の子">👧</div>
+					<div class="emoji" title="警察官">👮</div>
+					<div class="emoji" title="花嫁">👰</div>
+					<div class="emoji" title="中国人">👲</div>
+					<div class="emoji" title="mahjong">🀄</div>
+					<div class="emoji" title="joystick">🕹</div>
+					<div class="emoji" title="printer">🖨</div>
+					<div class="emoji" title="adi shakti">☬</div>
+					<div class="emoji" title="zap">⚡</div>
+					<div class="emoji" title="baseball">⚾</div>
+					<div class="emoji" title="snowman">⛄</div>
+					<div class="emoji" title="church">⛪</div>
+					<div class="emoji" title="ヨット">⛵</div>
+					<div class="emoji" title="scissors">✂</div>
+					<div class="emoji" title="golf">⛳</div>
+					<div class="emoji" title="あきれ顔">🙄</div>
+					<div class="emoji" title="料理">🍳</div>
+					<div class="emoji" title="弓矢">🏹</div>
+					<div class="emoji" title="tv">📺</div>
+					<div class="emoji" title="yum">😋</div>
+					<div class="emoji" title="cry">😢</div>
+					<div class="emoji" title="オタク">🤓</div>
+					<div class="emoji" title="思案顔">🤔</div>
+					<div class="emoji" title="ケガ">🤕</div>
+					<div class="emoji" title="側転">🤸</div>
+					<div class="emoji" title="juggling">🤹</div>
+					<div class="emoji" title="陽爻">⚊</div>
+					<div class="emoji" title="骨壷">⚱</div>
+					<div class="emoji" title="neuter">⚲</div>
+					<div class="emoji" title="口">👄</div>
+					<div class="emoji" title="canoe">🛶</div>
+					<div class="emoji" title="エビ">🦐</div>
+					<div class="emoji" title="tm">™</div>
+					<div class="emoji" title="Mars">♂</div>
+					<div class="emoji" title="Pluto">♇</div>
+					<div class="emoji" title="flower">⚘</div>
+					<div class="emoji" title="棺">⚰</div>
+					<div class="emoji" title="pick">⛏</div>
+					<div class="emoji" title="chains">⛓</div>
+					<div class="emoji" title="球技">⛹</div>
+					<div class="emoji" title="shrimp">🦐</div>
+					<div class="emoji" title="握手">🤝</div>
+					<div class="emoji" title="dumpling">🥟</div>
+					<div class="emoji" title="餃子">🥟</div>
+					<div class="emoji" title="chopsticks">🥢</div>
+					<div class="emoji" title="takeout box">🥡</div>
+					<div class="emoji" title="持ち帰りよう箱">🥡</div>
+					<div class="emoji" title="broccoli">🥦</div>
+					<div class="emoji" title="coconut">🥥</div>
+					<div class="emoji" title="そうか">🤨</div>
+					<div class="emoji" title="Ophiuchus">⛎</div>
+					<div class="emoji" title="微笑">🙂</div>
+					<div class="emoji" title="雷雨雲">⛈</div>
+					<div class="emoji" title="お姫様">👸</div>
+					<div class="emoji" title="天狗">👺</div>
+					<div class="emoji" title="お化け">👻</div>
+					<div class="emoji" title="天使">👼</div>
+					<div class="emoji" title="悪魔">👿</div>
+					<div class="emoji" title="衛兵">💂</div>
+					<div class="emoji" title="ネイル">💅</div>
+					<div class="emoji" title="美容院">💇</div>
+					<div class="emoji" title="床屋">💈</div>
+					<div class="emoji" title="注射器">💉</div>
+					<div class="emoji" title="キス">💋</div>
+					<div class="emoji" title="指輪">💍</div>
+					<div class="emoji" title="宝石">💎</div>
+					<div class="emoji" title="ブーケ">💐</div>
+					<div class="emoji" title="電球">💡</div>
+					<div class="emoji" title="衝撃">💥</div>
+					<div class="emoji" title="ドル袋">💰</div>
+					<div class="emoji" title="為替">💱</div>
+					<div class="emoji" title="ドル">💲</div>
+					<div class="emoji" title="お札">💴</div>
+					<div class="emoji" title="ドル札">💵</div>
+					<div class="emoji" title="イス">💺</div>
+					<div class="emoji" title="文書">📃</div>
+					<div class="emoji" title="文書2">📄</div>
+					<div class="emoji" title="画鋲">📌</div>
+					<div class="emoji" title="定規">📏</div>
+					<div class="emoji" title="付箋">📑</div>
+					<div class="emoji" title="台帳">📒</div>
+					<div class="emoji" title="ノート">📓</div>
+					<div class="emoji" title="ノート2">📔</div>
+					<div class="emoji" title="本(複数)">📚</div>
+					<div class="emoji" title="名札">📛</div>
+					<div class="emoji" title="メモ">📝</div>
+					<div class="emoji" title="受話器">📞</div>
+					<div class="emoji" title="拡声器">📢</div>
+					<div class="emoji" title="封筒2">📨</div>
+					<div class="emoji" title="ポスト">📮</div>
+					<div class="emoji" title="新聞">📰</div>
+					<div class="emoji" title="カメラ">📷</div>
+					<div class="emoji" title="カメラ2">📸</div>
+					<div class="emoji" title="テレビ">📺</div>
+					<div class="emoji" title="ラジオ">📻</div>
+					<div class="emoji" title="調べる">🔎</div>
+					<div class="emoji" title="ロック2">🔏</div>
+					<div class="emoji" title="ロック3">🔐</div>
+					<div class="emoji" title="ロック">🔒</div>
+					<div class="emoji" title="ベル">🔔</div>
+					<div class="emoji" title="BACK">🔙</div>
+					<div class="emoji" title="END">🔚</div>
+					<div class="emoji" title="ON">🔛</div>
+					<div class="emoji" title="SOON">🔜</div>
+					<div class="emoji" title="TOP">🔝</div>
+					<div class="emoji" title="数字">🔢</div>
+					<div class="emoji" title="ABC">🔤</div>
+					<div class="emoji" title="炎">🔥</div>
+					<div class="emoji" title="水晶玉">🔮</div>
+					<div class="emoji" title="六芒星">🔯</div>
+					<div class="emoji" title="紋章">🔱</div>
+					<div class="emoji" title="ハト">🕊</div>
+					<div class="emoji" title="10時">🕙</div>
+					<div class="emoji" title="11時">🕚</div>
+					<div class="emoji" title="12時">🕛</div>
+					<div class="emoji" title="1時半">🕜</div>
+					<div class="emoji" title="3時半">🕞</div>
+					<div class="emoji" title="4時半">🕟</div>
+					<div class="emoji" title="5時半">🕠</div>
+					<div class="emoji" title="6時半">🕡</div>
+					<div class="emoji" title="7時半">🕢</div>
+					<div class="emoji" title="8時半">🕣</div>
+					<div class="emoji" title="スパイ">🕵</div>
+					<div class="emoji" title="クモ">🕷</div>
+					<div class="emoji" title="万年筆">🖋</div>
+					<div class="emoji" title="絵筆">🖌</div>
+					<div class="emoji" title="アート">🖼</div>
+					<div class="emoji" title="ゴミ箱2">🗑</div>
+					<div class="emoji" title="会話">🗣</div>
+					<div class="emoji" title="日本">🗾</div>
+					<div class="emoji" title="スマイル">😃</div>
+					<div class="emoji" title="嬉しい顔">😄</div>
+					<div class="emoji" title="冷や汗">😅</div>
+					<div class="emoji" title="ウインク">😉</div>
+					<div class="emoji" title="キリッ">😎</div>
+					<div class="emoji" title="普通の顔">😐</div>
+					<div class="emoji" title="横目">😒</div>
+					<div class="emoji" title="困り顔">😓</div>
+					<div class="emoji" title="困る">😕</div>
+					<div class="emoji" title="混乱">😖</div>
+					<div class="emoji" title="チュー">😗</div>
+					<div class="emoji" title="チュッ">😚</div>
+					<div class="emoji" title="べー">😛</div>
+					<div class="emoji" title="べーっ">😝</div>
+					<div class="emoji" title="心配">😟</div>
+					<div class="emoji" title="青ざめ">😨</div>
+					<div class="emoji" title="睡眠中">😪</div>
+					<div class="emoji" title="疲れた">😫</div>
+					<div class="emoji" title="いーっ">😬</div>
+					<div class="emoji" title="大泣き">😭</div>
+					<div class="emoji" title="しーん">😯</div>
+					<div class="emoji" title="冷や汗2">😰</div>
+					<div class="emoji" title="ぽっ">😳</div>
+					<div class="emoji" title="眠い">😴</div>
+					<div class="emoji" title="無表情">😶</div>
+					<div class="emoji" title="駅">🚉</div>
+					<div class="emoji" title="船">🚢</div>
+					<div class="emoji" title="信号(横)">🚥</div>
+					<div class="emoji" title="信号(縦)">🚦</div>
+					<div class="emoji" title="工事中">🚧</div>
+					<div class="emoji" title="ドア">🚪</div>
+					<div class="emoji" title="喫煙">🚬</div>
+					<div class="emoji" title="禁煙">🚭</div>
+					<div class="emoji" title="トイレ">🚽</div>
+					<div class="emoji" title="入浴">🛀</div>
+					<div class="emoji" title="お風呂">🛁</div>
+					<div class="emoji" title="魚座">♓</div>
+					<div class="emoji" title="注意">⚠</div>
+					<div class="emoji" title="野球">⚾</div>
+					<div class="emoji" title="ペン">✒</div>
+					<div class="emoji" title="麻雀">🀄</div>
+					<div class="emoji" title="A型">🅰</div>
+					<div class="emoji" title="株価">💹</div>
+					<div class="emoji" title="折れ線グラフ(右肩上がり)">📈</div>
+					<div class="emoji" title="折れ線グラフ(右肩下がり)">📉</div>
+					<div class="emoji" title="記号">🔣</div>
+					<div class="emoji" title="2時半">🕝</div>
+					<div class="emoji" title="9時半">🕤</div>
+					<div class="emoji" title="10時半">🕥</div>
+					<div class="emoji" title="11時半">🕦</div>
+					<div class="emoji" title="12時半">🕧</div>
+					<div class="emoji" title="がっかり">😞</div>
+					<div class="emoji" title="怒った顔">😠</div>
+					<div class="emoji" title="勝ち誇り">😤</div>
+					<div class="emoji" title="やれやれ">😥</div>
+					<div class="emoji" title="悲しい顔">😧</div>
+					<div class="emoji" title="うんざり">😩</div>
+					<div class="emoji" title="ぽかんと">😮</div>
+					<div class="emoji" title="びっくり">😲</div>
+					<div class="emoji" title="ふらふら">😵</div>
+					<div class="emoji" title="風邪ひき">😷</div>
+					<div class="emoji" title="NG">🙅</div>
+					<div class="emoji" title="禁止">🚫</div>
+					<div class="emoji" title="税関">🛃</div>
+					<div class="emoji" title="腕時計">⌚️</div>
+					<div class="emoji" title="砂時計">⌛</div>
+					<div class="emoji" title="砂時計2">⏳</div>
+					<div class="emoji" title="黒電話">☎</div>
+					<div class="emoji" title="蟹座">♋</div>
+					<div class="emoji" title="蠍座">♏</div>
+					<div class="emoji" title="温泉">♨</div>
+					<div class="emoji" title="波線">〰</div>
+					<div class="emoji" title="下限の月(白)">☾</div>
+					<div class="emoji" title="将棋の駒(白)1">☖</div>
+					<div class="emoji" title="将棋の駒(黒)1">☗</div>
+					<div class="emoji" title="アンク">☥</div>
+					<div class="emoji" title="共産主義">☭</div>
+					<div class="emoji" title="八卦の兌">☱</div>
+					<div class="emoji" title="八卦の震">☳</div>
+					<div class="emoji" title="八卦の巽">☴</div>
+					<div class="emoji" title="八卦の坎">☵</div>
+					<div class="emoji" title="八卦の艮">☶</div>
+					<div class="emoji" title="八卦の坤">☷</div>
+					<div class="emoji" title="太陽(白)">☼</div>
+					<div class="emoji" title="海王星">♆</div>
+					<div class="emoji" title="冥王星">♇</div>
+					<div class="emoji" title="キング(白)">♔</div>
+					<div class="emoji" title="キング(黒)">♚</div>
+					<div class="emoji" title="クイーン(黒)">♛</div>
+					<div class="emoji" title="ナイト(黒)">♞</div>
+					<div class="emoji" title="ポーン(黒)">♟</div>
+					<div class="emoji" title="四分音符">♩</div>
+					<div class="emoji" title="シャープ">♯</div>
+					<div class="emoji" title="リサイクルマーク(ペットボトル)">♳</div>
+					<div class="emoji" title="リサイクルマーク(ポリ塩化ビニール)">♵</div>
+					<div class="emoji" title="リサイクルマーク(ポリプロピレン)">♷</div>
+					<div class="emoji" title="サイコロ(1)">⚀</div>
+					<div class="emoji" title="サイコロ(2)">⚁</div>
+					<div class="emoji" title="サイコロ(3)">⚂</div>
+					<div class="emoji" title="サイコロ(4)">⚃</div>
+					<div class="emoji" title="サイコロ(5)">⚄</div>
+					<div class="emoji" title="サイコロ(6)">⚅</div>
+					<div class="emoji" title="囲碁記号1">⚆</div>
+					<div class="emoji" title="囲碁記号2">⚇</div>
+					<div class="emoji" title="囲碁記号3">⚈</div>
+					<div class="emoji" title="囲碁記号4">⚉</div>
+					<div class="emoji" title="太陽爻">⚌</div>
+					<div class="emoji" title="少陰爻">⚍</div>
+					<div class="emoji" title="少陽爻">⚎</div>
+					<div class="emoji" title="太陰爻">⚏</div>
+					<div class="emoji" title="寄航港">⚒</div>
+					<div class="emoji" title="古戦場">⚔</div>
+					<div class="emoji" title="ランビキ">⚗</div>
+					<div class="emoji" title="両性愛">⚤</div>
+					<div class="emoji" title="雌雄同体">⚥</div>
+					<div class="emoji" title="作業中">⛑</div>
+					<div class="emoji" title="海水浴場">⛱</div>
+					<div class="emoji" title="クリケット">🏏</div>
+					<div class="emoji" title="ホッケー">🏑</div>
+					<div class="emoji" title="カーバ">🕋</div>
+					<div class="emoji" title="モスク">🕌</div>
+					<div class="emoji" title="ハート(黒)">🖤</div>
+					<div class="emoji" title="逆さま顔">🙃</div>
+					<div class="emoji" title="お口チャック">🤐</div>
+					<div class="emoji" title="風邪ひき2">🤒</div>
+					<div class="emoji" title="踊る男性">🕺</div>
+					<div class="emoji" title="パー5">🤚</div>
+					<div class="emoji" title="fountain">⛲</div>
+					<div class="emoji" title="fuelpump">⛽</div>
+					<div class="emoji" title="parking">🅿</div>
+					<div class="emoji" title="regional indicator symbol letter O">🇴</div>
+					<div class="emoji" title="regional indicator symbol letter P">🇵</div>
+					<div class="emoji" title="regional indicator symbol letter Q">🇶</div>
+					<div class="emoji" title="regional indicator symbol letter R">🇷</div>
+					<div class="emoji" title="regional indicator symbol letter S">🇸</div>
+					<div class="emoji" title="regional indicator symbol letter T">🇹</div>
+					<div class="emoji" title="regional indicator symbol letter U">🇺</div>
+					<div class="emoji" title="regional indicator symbol letter V">🇻</div>
+					<div class="emoji" title="regional indicator symbol letter W">🇼</div>
+					<div class="emoji" title="regional indicator symbol letter X">🇽</div>
+					<div class="emoji" title="regional indicator symbol letter Y">🇾</div>
+					<div class="emoji" title="regional indicator symbol letter Z">🇿</div>
+					<div class="emoji" title="accept">🉑</div>
+					<div class="emoji" title="sunrise">🌅</div>
+					<div class="emoji" title="rainbow">🌈</div>
+					<div class="emoji" title="volcano">🌋</div>
+					<div class="emoji" title="white sun behind cloud with rain">🌦</div>
+					<div class="emoji" title="chestnut">🌰</div>
+					<div class="emoji" title="blossom">🌼</div>
+					<div class="emoji" title="pineapple">🍍</div>
+					<div class="emoji" title="cherries">🍒</div>
+					<div class="emoji" title="spaghetti">🍝</div>
+					<div class="emoji" title="cocktail">🍸</div>
+					<div class="emoji" title="wind chime">🎐</div>
+					<div class="emoji" title="microphone">🎤</div>
+					<div class="emoji" title="video game">🎮</div>
+					<div class="emoji" title="notes">🎶</div>
+					<div class="emoji" title="basketball">🏀</div>
+					<div class="emoji" title="snowboarder">🏂</div>
+					<div class="emoji" title="stadium">🏟</div>
+					<div class="emoji" title="hospital">🏥</div>
+					<div class="emoji" title="factory">🏭</div>
+					<div class="emoji" title="leopard">🐆</div>
+					<div class="emoji" title="rabbit2">🐇</div>
+					<div class="emoji" title="chicken">🐔</div>
+					<div class="emoji" title="elephant">🐘</div>
+					<div class="emoji" title="octopus">🐙</div>
+					<div class="emoji" title="blowfish">🐡</div>
+					<div class="emoji" title="penguin">🐧</div>
+					<div class="emoji" title="dolphin">🐬</div>
+					<div class="emoji" title="hamster">🐹</div>
+					<div class="emoji" title="chipmunk">🐿</div>
+					<div class="emoji" title="punch">👊</div>
+					<div class="emoji" title="wave">👋</div>
+					<div class="emoji" title="clap">👏</div>
+					<div class="emoji" title="womans hat">👒</div>
+					<div class="emoji" title="eyeglasses">👓</div>
+					<div class="emoji" title="mans shoe">👞</div>
+					<div class="emoji" title="high heel">👠</div>
+					<div class="emoji" title="footprints">👣</div>
+					<div class="emoji" title="older man">👴</div>
+					<div class="emoji" title="older woman">👵</div>
+					<div class="emoji" title="nail care">💅</div>
+					<div class="emoji" title="anger">💢</div>
+					<div class="emoji" title="droplet">💧</div>
+					<div class="emoji" title="muscle">💪</div>
+					<div class="emoji" title="dizzy">💫</div>
+					<div class="emoji" title="money bag">💰</div>
+					<div class="emoji" title="chart">💹</div>
+					<div class="emoji" title="card index">📇</div>
+					<div class="emoji" title="blue book">📘</div>
+					<div class="emoji" title="name badge">📛</div>
+					<div class="emoji" title="loudspeaker">📢</div>
+					<div class="emoji" title="e mail">📧</div>
+					<div class="emoji" title="calling">📲</div>
+					<div class="emoji" title="repeat">🔁</div>
+					<div class="emoji" title="sound">🔉</div>
+					<div class="emoji" title="symbols">🔣</div>
+					<div class="emoji" title="wastebasket">🗑</div>
+					<div class="emoji" title="sweat smile">😅</div>
+					<div class="emoji" title="smiling imp">😈</div>
+					<div class="emoji" title="heart eyes">😍</div>
+					<div class="emoji" title="disappointed">😞</div>
+					<div class="emoji" title="tired face">😫</div>
+					<div class="emoji" title="cold sweat">😰</div>
+					<div class="emoji" title="dizzy face">😵</div>
+					<div class="emoji" title="taxi">🚕</div>
+					<div class="emoji" title="construction">🚧</div>
+					<div class="emoji" title="smoking">🚬</div>
+					<div class="emoji" title="restroom">🚻</div>
+					<div class="emoji" title="warning">⚠</div>
+					<div class="emoji" title="black nib">✒</div>
+					<div class="emoji" title="regional indicator symbol letter A">🇦</div>
+					<div class="emoji" title="regional indicator symbol letter B">🇧</div>
+					<div class="emoji" title="regional indicator symbol letter C">🇨</div>
+					<div class="emoji" title="regional indicator symbol letter D">🇩</div>
+					<div class="emoji" title="regional indicator symbol letter E">🇪</div>
+					<div class="emoji" title="regional indicator symbol letter F">🇫</div>
+					<div class="emoji" title="regional indicator symbol letter G">🇬</div>
+					<div class="emoji" title="regional indicator symbol letter H">🇭</div>
+					<div class="emoji" title="regional indicator symbol letter I">🇮</div>
+					<div class="emoji" title="regional indicator symbol letter J">🇯</div>
+					<div class="emoji" title="regional indicator symbol letter K">🇰</div>
+					<div class="emoji" title="badminton racquet">🏸</div>
+					<div class="emoji" title="regional indicator symbol letter L">🇱</div>
+					<div class="emoji" title="regional indicator symbol letter M">🇲</div>
+					<div class="emoji" title="regional indicator symbol letter N">🇳</div>
+					<div class="emoji" title="green book">📗</div>
+					<div class="emoji" title="open mouth">😮</div>
+					<div class="emoji" title="smiley cat">😺</div>
+					<div class="emoji" title="kissing cat">😽</div>
+					<div class="emoji" title="pouting cat">😾</div>
+					<div class="emoji" title="scream cat">🙀</div>
+					<div class="emoji" title="pray">🙏</div>
+					<div class="emoji" title="tram">🚊</div>
+					<div class="emoji" title="bus">🚌</div>
+					<div class="emoji" title="ship">🚢</div>
+					<div class="emoji" title="customs">🛃</div>
+					<div class="emoji" title="rewind">⏪</div>
+					<div class="emoji" title="Scorpio">♏</div>
+					<div class="emoji" title="Capricorn">♑</div>
+					<div class="emoji" title="Aquarius">♒</div>
+					<div class="emoji" title="diamonds">♦</div>
+					<div class="emoji" title="recycle">♻</div>
+					<div class="emoji" title="fist">✊</div>
+					<div class="emoji" title="snowflake">❄</div>
+					<div class="emoji" title="sparkle">❇</div>
+					<div class="emoji" title="raised hand with part between middle and ring fingers">🖖</div>
+					<div class="emoji" title="caution sign">☡</div>
+					<div class="emoji" title="farsi symbol">☫</div>
+					<div class="emoji" title="quarter note">♩</div>
+					<div class="emoji" title="crossed swords">⚔</div>
+					<div class="emoji" title="fleur de lis">⚜</div>
+					<div class="emoji" title="divorce symbol">⚮</div>
+					<div class="emoji" title="coffin">⚰</div>
+					<div class="emoji" title="free">🆓</div>
+					<div class="emoji" title="id">🆔</div>
+					<div class="emoji" title="new">🆕</div>
+					<div class="emoji" title="ng">🆖</div>
+					<div class="emoji" title="ok">🆗</div>
+					<div class="emoji" title="sos">🆘</div>
+					<div class="emoji" title="up">🆙</div>
+					<div class="emoji" title="vs">🆚</div>
+					<div class="emoji" title="koko">🈁</div>
+					<div class="emoji" title="sa">🈂</div>
+					<div class="emoji" title="foggy">🌁</div>
+					<div class="emoji" title="ocean">🌊</div>
+					<div class="emoji" title="first quarter moon with face">🌛</div>
+					<div class="emoji" title="fog">🌫</div>
+					<div class="emoji" title="tulip">🌷</div>
+					<div class="emoji" title="herb">🌿</div>
+					<div class="emoji" title="leaves">🍃</div>
+					<div class="emoji" title="tomato">🍅</div>
+					<div class="emoji" title="melon">🍈</div>
+					<div class="emoji" title="pear">🍐</div>
+					<div class="emoji" title="pizza">🍕</div>
+					<div class="emoji" title="rice">🍚</div>
+					<div class="emoji" title="dango">🍡</div>
+					<div class="emoji" title="oden">🍢</div>
+					<div class="emoji" title="candy">🍬</div>
+					<div class="emoji" title="cake">🍰</div>
+					<div class="emoji" title="bento">🍱</div>
+					<div class="emoji" title="stew">🍲</div>
+					<div class="emoji" title="egg">🥚</div>
+					<div class="emoji" title="tea">🍵</div>
+					<div class="emoji" title="sake">🍶</div>
+					<div class="emoji" title="ribbon">🎀</div>
+					<div class="emoji" title="sparkler">🎇</div>
+					<div class="emoji" title="balloon">🎈</div>
+					<div class="emoji" title="bamboo">🎍</div>
+					<div class="emoji" title="cinema">🎦</div>
+					<div class="emoji" title="tophat">🎩</div>
+					<div class="emoji" title="ticket">🎫</div>
+					<div class="emoji" title="clapper">🎬</div>
+					<div class="emoji" title="bowling">🎳</div>
+					<div class="emoji" title="trumpet">🎺</div>
+					<div class="emoji" title="violin">🎻</div>
+					<div class="emoji" title="tennis">🎾</div>
+					<div class="emoji" title="surfer">🏄</div>
+					<div class="emoji" title="trophy">🏆</div>
+					<div class="emoji" title="football">🏈</div>
+					<div class="emoji" title="swimmer">🏊</div>
+					<div class="emoji" title="golfer">🏌</div>
+					<div class="emoji" title="desert">🏜</div>
+					<div class="emoji" title="house">🏠</div>
+					<div class="emoji" title="office">🏢</div>
+					<div class="emoji" title="bank">🏦</div>
+					<div class="emoji" title="hotel">🏨</div>
+					<div class="emoji" title="school">🏫</div>
+					<div class="emoji" title="rosette">🏵</div>
+					<div class="emoji" title="mouse2">🐁</div>
+					<div class="emoji" title="cow2">🐄</div>
+					<div class="emoji" title="tiger2">🐅</div>
+					<div class="emoji" title="cat2">🐈</div>
+					<div class="emoji" title="dragon">🐉</div>
+					<div class="emoji" title="ram">🐏</div>
+					<div class="emoji" title="goat">🐐</div>
+					<div class="emoji" title="sheep">🐑</div>
+					<div class="emoji" title="dog2">🐕</div>
+					<div class="emoji" title="boar">🐗</div>
+					<div class="emoji" title="shell">🐚</div>
+					<div class="emoji" title="bug">🐛</div>
+					<div class="emoji" title="ant">🐜</div>
+					<div class="emoji" title="bee">🐝</div>
+					<div class="emoji" title="beetle">🐞</div>
+					<div class="emoji" title="fish">🐟</div>
+					<div class="emoji" title="koala">🐨</div>
+					<div class="emoji" title="bear">🐻</div>
+					<div class="emoji" title="feet">🐾</div>
+					<div class="emoji" title="tongue">👅</div>
+					<div class="emoji" title="necktie">👔</div>
+					<div class="emoji" title="kimono">👘</div>
+					<div class="emoji" title="bikini">👙</div>
+					<div class="emoji" title="handbag">👜</div>
+					<div class="emoji" title="sandal">👡</div>
+					<div class="emoji" title="couple">👫</div>
+					<div class="emoji" title="princess">👸</div>
+					<div class="emoji" title="guardsman">💂</div>
+					<div class="emoji" title="massage">💆</div>
+					<div class="emoji" title="haircut">💇</div>
+					<div class="emoji" title="barber">💈</div>
+					<div class="emoji" title="couplekiss">💏</div>
+					<div class="emoji" title="bouquet">💐</div>
+					<div class="emoji" title="boom">💥</div>
+					<div class="emoji" title="dash">💨</div>
+					<div class="emoji" title="100">💯</div>
+					<div class="emoji" title="dollar">💵</div>
+					<div class="emoji" title="computer">💻</div>
+					<div class="emoji" title="minidisc">💽</div>
+					<div class="emoji" title="calendar">📆</div>
+					<div class="emoji" title="pushpin">📌</div>
+					<div class="emoji" title="ledger">📒</div>
+					<div class="emoji" title="notebook">📓</div>
+					<div class="emoji" title="scroll">📜</div>
+					<div class="emoji" title="pencil">📝</div>
+					<div class="emoji" title="mailbox">📫</div>
+					<div class="emoji" title="postbox">📮</div>
+					<div class="emoji" title="mute">🔇</div>
+					<div class="emoji" title="speaker">🔈</div>
+					<div class="emoji" title="battery">🔋</div>
+					<div class="emoji" title="unlock">🔓</div>
+					<div class="emoji" title="link">🔗</div>
+					<div class="emoji" title="back">🔙</div>
+					<div class="emoji" title="end">🔚</div>
+					<div class="emoji" title="on">🔛</div>
+					<div class="emoji" title="soon">🔜</div>
+					<div class="emoji" title="top">🔝</div>
+					<div class="emoji" title="abcd">🔡</div>
+					<div class="emoji" title="1234">🔢</div>
+					<div class="emoji" title="abc">🔤</div>
+					<div class="emoji" title="wrench">🔧</div>
+					<div class="emoji" title="hammer">🔨</div>
+					<div class="emoji" title="knife">🔪</div>
+					<div class="emoji" title="beginner">🔰</div>
+					<div class="emoji" title="trident">🔱</div>
+					<div class="emoji" title="clock1">🕐</div>
+					<div class="emoji" title="clock2">🕑</div>
+					<div class="emoji" title="clock3">🕒</div>
+					<div class="emoji" title="clock4">🕓</div>
+					<div class="emoji" title="clock5">🕔</div>
+					<div class="emoji" title="clock6">🕕</div>
+					<div class="emoji" title="clock7">🕖</div>
+					<div class="emoji" title="clock8">🕗</div>
+					<div class="emoji" title="clock9">🕘</div>
+					<div class="emoji" title="clock10">🕙</div>
+					<div class="emoji" title="clock11">🕚</div>
+					<div class="emoji" title="clock12">🕛</div>
+					<div class="emoji" title="clock130">🕜</div>
+					<div class="emoji" title="clock230">🕝</div>
+					<div class="emoji" title="clock330">🕞</div>
+					<div class="emoji" title="clock430">🕟</div>
+					<div class="emoji" title="clock530">🕠</div>
+					<div class="emoji" title="clock630">🕡</div>
+					<div class="emoji" title="clock730">🕢</div>
+					<div class="emoji" title="clock830">🕣</div>
+					<div class="emoji" title="clock930">🕤</div>
+					<div class="emoji" title="man in business suit levitating">🕴</div>
+					<div class="emoji" title="laughing">😆</div>
+					<div class="emoji" title="innocent">😇</div>
+					<div class="emoji" title="relieved">😌</div>
+					<div class="emoji" title="unamused">😒</div>
+					<div class="emoji" title="pensive">😔</div>
+					<div class="emoji" title="confused">😕</div>
+					<div class="emoji" title="kissing">😗</div>
+					<div class="emoji" title="worried">😟</div>
+					<div class="emoji" title="persevere">😣</div>
+					<div class="emoji" title="triumph">😤</div>
+					<div class="emoji" title="frowning">😦</div>
+					<div class="emoji" title="anguished">😧</div>
+					<div class="emoji" title="fearful">😨</div>
+					<div class="emoji" title="grimacing">😬</div>
+					<div class="emoji" title="flushed">😳</div>
+					<div class="emoji" title="sleeping">😴</div>
+					<div class="emoji" title="joy cat">😹</div>
+					<div class="emoji" title="walking">🚶</div>
+					<div class="emoji" title="mens">🚹</div>
+					<div class="emoji" title="toilet">🚽</div>
+					<div class="emoji" title="wc">🚾</div>
+					<div class="emoji" title="bathtub">🛁</div>
+					<div class="emoji" title="scooter">🛴</div>
+					<div class="emoji" title="レスラー">🤼</div>
+					<div class="emoji" title="boxing glove">🥊</div>
+					<div class="emoji" title="道着">🥋</div>
+					<div class="emoji" title="handball">🤾</div>
+					<div class="emoji" title="スプーン">🥄</div>
+					<div class="emoji" title="spoon">🥄</div>
+					<div class="emoji" title="goal net">🥅</div>
+					<div class="emoji" title="銀メダル">🥈</div>
+					<div class="emoji" title="銅メダル">🥉</div>
+					<div class="emoji" title="チョウ">🦋</div>
+					<div class="emoji" title="シカ">🦌</div>
+					<div class="emoji" title="ゴリラ">🦍</div>
+					<div class="emoji" title="トカゲ">🦎</div>
+					<div class="emoji" title="サイ">🦏</div>
+					<div class="emoji" title="rhinoceros">🦏</div>
+					<div class="emoji" title="sunny">☀</div>
+					<div class="emoji" title="cloud">☁</div>
+					<div class="emoji" title="雨2">☂</div>
+					<div class="emoji" title="雪">☃</div>
+					<div class="emoji" title="black star">★</div>
+					<div class="emoji" title="星(白)">☆</div>
+					<div class="emoji" title="star">☆</div>
+					<div class="emoji" title="thunderstorm">☈</div>
+					<div class="emoji" title="conjunction">☌</div>
+					<div class="emoji" title="opposition">☍</div>
+					<div class="emoji" title="umbrella with rain drops">☔</div>
+					<div class="emoji" title="reversed rotated floral heart bullet">☙</div>
+					<div class="emoji" title="relaxed">☺</div>
+					<div class="emoji" title="スマイルフェイス(黒)2">☻</div>
+					<div class="emoji" title="Aries">♈</div>
+					<div class="emoji" title="Taurus">♉</div>
+					<div class="emoji" title="Gemini">♊</div>
+					<div class="emoji" title="Cancer">♋</div>
+					<div class="emoji" title="Virgo">♍</div>
+					<div class="emoji" title="Libra">♎</div>
+					<div class="emoji" title="Pisces">♓</div>
+					<div class="emoji" title="clubs">♣</div>
+					<div class="emoji" title="hearts">♥</div>
+					<div class="emoji" title="recycling symbol for type 1 plastics">♳</div>
+					<div class="emoji" title="recycling symbol for type 2 plastics">♴</div>
+					<div class="emoji" title="recycling symbol for type 3 plastics">♵</div>
+					<div class="emoji" title="recycling symbol for type 4 plastics">♶</div>
+					<div class="emoji" title="recycling symbol for type 5 plastics">♷</div>
+					<div class="emoji" title="recycling symbol for type 6 plastics">♸</div>
+					<div class="emoji" title="recycling symbol for generic materials">♺</div>
+					<div class="emoji" title="black circle with white dot right">⚈</div>
+					<div class="emoji" title="envelope">✉</div>
+					<div class="emoji" title="v">✌</div>
+					<div class="emoji" title="pencil2">✏</div>
+					<div class="emoji" title="secret">㊙</div>
+					<div class="emoji" title="上弦の月">🌓</div>
+					<div class="emoji" title="sneezing face">🤧</div>
+					<div class="emoji" title="くしゃみ">🤧</div>
+					<div class="emoji" title="tent">⛺</div>
+					<div class="emoji" title="×2">❌</div>
+					<div class="emoji" title="？2">❓</div>
+					<div class="emoji" title="！2">❗</div>
+					<div class="emoji" title="C">🇨</div>
+					<div class="emoji" title="D">🇩</div>
+					<div class="emoji" title="F">🇫</div>
+					<div class="emoji" title="G">🇬</div>
+					<div class="emoji" title="I">🇮</div>
+					<div class="emoji" title="K">🇰</div>
+					<div class="emoji" title="O">🇴</div>
+					<div class="emoji" title="P">🇵</div>
+					<div class="emoji" title="R">🇷</div>
+					<div class="emoji" title="S">🇸</div>
+					<div class="emoji" title="V">🇻</div>
+					<div class="emoji" title="W">🇼</div>
+					<div class="emoji" title="X">🇽</div>
+					<div class="emoji" title="Y">🇾</div>
+					<div class="emoji" title="Z">🇿</div>
+					<div class="emoji" title="霧">🌁</div>
+					<div class="emoji" title="傘">🌂</div>
+					<div class="emoji" title="夜">🌃</div>
+					<div class="emoji" title="海">🌊</div>
+					<div class="emoji" title="栗">🌰</div>
+					<div class="emoji" title="芽">🌱</div>
+					<div class="emoji" title="鍋">🍲</div>
+					<div class="emoji" title="gift">🎁</div>
+					<div class="emoji" title="tada">🎉</div>
+					<div class="emoji" title="dolls">🎎</div>
+					<div class="emoji" title="flags">🎏</div>
+					<div class="emoji" title="ski">🎿</div>
+					<div class="emoji" title="runner">🏃</div>
+					<div class="emoji" title="家">🏠</div>
+					<div class="emoji" title="旗(黒)">🏴</div>
+					<div class="emoji" title="label">🏷</div>
+					<div class="emoji" title="虫">🐛</div>
+					<div class="emoji" title="目">👀</div>
+					<div class="emoji" title="目2">👁</div>
+					<div class="emoji" title="耳">👂</div>
+					<div class="emoji" title="鼻">👃</div>
+					<div class="emoji" title="舌">👅</div>
+					<div class="emoji" title="crown">👑</div>
+					<div class="emoji" title="shirt">👕</div>
+					<div class="emoji" title="jeans">👖</div>
+					<div class="emoji" title="dress">👗</div>
+					<div class="emoji" title="purse">👛</div>
+					<div class="emoji" title="pouch">👝</div>
+					<div class="emoji" title="boot">👢</div>
+					<div class="emoji" title="boy">👦</div>
+					<div class="emoji" title="girl">👧</div>
+					<div class="emoji" title="baby">👶</div>
+					<div class="emoji" title="ghost">👻</div>
+					<div class="emoji" title="angel">👼</div>
+					<div class="emoji" title="alien">👽</div>
+					<div class="emoji" title="skull">💀</div>
+					<div class="emoji" title="薬">💊</div>
+					<div class="emoji" title="ring">💍</div>
+					<div class="emoji" title="gem">💎</div>
+					<div class="emoji" title="yen">💴</div>
+					<div class="emoji" title="euro">💶</div>
+					<div class="emoji" title="pound">💷</div>
+					<div class="emoji" title="seat">💺</div>
+					<div class="emoji" title="MD">💽</div>
+					<div class="emoji" title="CD">💿</div>
+					<div class="emoji" title="DVD">📀</div>
+					<div class="emoji" title="dvd">📀</div>
+					<div class="emoji" title="date">📅</div>
+					<div class="emoji" title="book">📖</div>
+					<div class="emoji" title="本(青)">📘</div>
+					<div class="emoji" title="books">📚</div>
+					<div class="emoji" title="pager">📟</div>
+					<div class="emoji" title="FAX">📠</div>
+					<div class="emoji" title="fax">📠</div>
+					<div class="emoji" title="mega">📣</div>
+					<div class="emoji" title="radio">📻</div>
+					<div class="emoji" title="vhs">📼</div>
+					<div class="emoji" title="key">🔑</div>
+					<div class="emoji" title="lock">🔒</div>
+					<div class="emoji" title="bell">🔔</div>
+					<div class="emoji" title="1時">🕐</div>
+					<div class="emoji" title="2時">🕑</div>
+					<div class="emoji" title="3時">🕒</div>
+					<div class="emoji" title="4時">🕓</div>
+					<div class="emoji" title="5時">🕔</div>
+					<div class="emoji" title="6時">🕕</div>
+					<div class="emoji" title="9時">🕘</div>
+					<div class="emoji" title="hole">🕳</div>
+					<div class="emoji" title="grin">😁</div>
+					<div class="emoji" title="smiley">😃</div>
+					<div class="emoji" title="smile">😄</div>
+					<div class="emoji" title="sweat">😓</div>
+					<div class="emoji" title="angry">😠</div>
+					<div class="emoji" title="rage">😡</div>
+					<div class="emoji" title="weary">😩</div>
+					<div class="emoji" title="sleepy">😪</div>
+					<div class="emoji" title="hushed">😯</div>
+					<div class="emoji" title="scream">😱</div>
+					<div class="emoji" title="mask">😷</div>
+					<div class="emoji" title="door">🚪</div>
+					<div class="emoji" title="bath">🛀</div>
+					<div class="emoji" title="！！">‼</div>
+					<div class="emoji" title="！？">⁉</div>
+					<div class="emoji" title="watch">⌚️</div>
+					<div class="emoji" title="雨">☔</div>
+					<div class="emoji" title="×3">❎</div>
+					<div class="emoji" title="？">❔</div>
+					<div class="emoji" title="！">❕</div>
+					<div class="emoji" title="○">⭕</div>
+					<div class="emoji" title="UFO">🛸</div>
+					<div class="emoji" title="拳(左)">🤛</div>
+					<div class="emoji" title="ドラム">🥁</div>
+					<div class="emoji" title="die face 1">⚀</div>
+					<div class="emoji" title="die face 2">⚁</div>
+					<div class="emoji" title="die face 3">⚂</div>
+					<div class="emoji" title="die face 4">⚃</div>
+					<div class="emoji" title="die face 5">⚄</div>
+					<div class="emoji" title="die face 6">⚅</div>
+					<div class="emoji" title="ice skate">⛸</div>
+					<div class="emoji" title="nerd face">🤓</div>
+					<div class="emoji" title="カヌー">🛶</div>
+					<div class="emoji" title="a">🅰</div>
+					<div class="emoji" title="b">🅱</div>
+					<div class="emoji" title="o2">🅾</div>
+					<div class="emoji" title="ab">🆎</div>
+					<div class="emoji" title="cl">🆑</div>
+					<div class="emoji" title="E">🇪</div>
+					<div class="emoji" title="H">🇭</div>
+					<div class="emoji" title="J">🇯</div>
+					<div class="emoji" title="N">🇳</div>
+					<div class="emoji" title="Q">🇶</div>
+					<div class="emoji" title="U">🇺</div>
+					<div class="emoji" title="waxing crescent moon">🌒</div>
+					<div class="emoji" title="waxing gibbous moon">🌔</div>
+					<div class="emoji" title="waning gibbous moon">🌖</div>
+					<div class="emoji" title="waning crescent moon">🌘</div>
+					<div class="emoji" title="last quarter moon with face">🌜</div>
+					<div class="emoji" title="white sun with small cloud">🌤</div>
+					<div class="emoji" title="chocolate bar">🍫</div>
+					<div class="emoji" title="ナイフとフォークとお皿">🍽</div>
+					<div class="emoji" title="bottle with popping cork">🍾</div>
+					<div class="emoji" title="ゲームコントローラー">🎮</div>
+					<div class="emoji" title="手をつないだカップル">👫</div>
+					<div class="emoji" title="手をつないだ二人の男性">👬</div>
+					<div class="emoji" title="手をつないだ二人の女性">👭</div>
+					<div class="emoji" title="chart with downwards trend">📉</div>
+					<div class="emoji" title="mag">🔍</div>
+					<div class="emoji" title="デスクトップパソコン">🖥</div>
+					<div class="emoji" title="カードファイルボックス">🗃</div>
+					<div class="emoji" title="stuck out tongue winking eye">😜</div>
+					<div class="emoji" title="stuck out tongue closed eyes">😝</div>
+					<div class="emoji" title="speak no evil">🙊</div>
+					<div class="emoji" title="トレーラートラック">🚛</div>
+					<div class="emoji" title="m">Ⓜ️</div>
+					<div class="emoji" title="caduceus">☤</div>
+					<div class="emoji" title="chi rho">☧</div>
+					<div class="emoji" title="法輪">☸</div>
+					<div class="emoji" title="水星">☿</div>
+					<div class="emoji" title="Mercury">☿</div>
+					<div class="emoji" title="金星">♀</div>
+					<div class="emoji" title="地球">♁</div>
+					<div class="emoji" title="木星">♃</div>
+					<div class="emoji" title="Jupiter">♃</div>
+					<div class="emoji" title="Saturn">♄</div>
+					<div class="emoji" title="Uranus">♅</div>
+					<div class="emoji" title="Neptune">♆</div>
+					<div class="emoji" title="black circle with two white dots">⚉</div>
+					<div class="emoji" title="陰爻">⚋</div>
+					<div class="emoji" title="alembic">⚗</div>
+					<div class="emoji" title="花屋">⚘</div>
+					<div class="emoji" title="歯車">⚙</div>
+					<div class="emoji" title="interlocked male and female sign">⚤</div>
+					<div class="emoji" title="horizontal male with stroke sign">⚩</div>
+					<div class="emoji" title="x">❌</div>
+					<div class="emoji" title="negative squared cross mark">❎</div>
+					<div class="emoji" title="heavy division sign">➗</div>
+					<div class="emoji" title="金メダル">🥇</div>
+					<div class="emoji" title="kiwifruit">🥝</div>
+					<div class="emoji" title="キリン">🦒</div>
+					<div class="emoji" title="pancakes">🥞</div>
+					<div class="emoji" title="イカ">🦑</div>
+					<div class="emoji" title="クールマーク">🆒</div>
+					<div class="emoji" title="サービスマーク">🈂</div>
+					<div class="emoji" title="open for business mark">🈺</div>
+					<div class="emoji" title="ideograph advantage">🉐</div>
+					<div class="emoji" title="sunrise over mountains">🌄</div>
+					<div class="emoji" title="天の川">🌌</div>
+					<div class="emoji" title="new moon">🌑</div>
+					<div class="emoji" title="full moon">🌕</div>
+					<div class="emoji" title="last quarter moon symbol">🌗</div>
+					<div class="emoji" title="new moon with face">🌚</div>
+					<div class="emoji" title="full moon with face">🌝</div>
+					<div class="emoji" title="white sun behind cloud">🌥</div>
+					<div class="emoji" title="cloud with lightning">🌩</div>
+					<div class="emoji" title="wind blowing face">🌬</div>
+					<div class="emoji" title="palm tree">🌴</div>
+					<div class="emoji" title="hot pepper">🌶</div>
+					<div class="emoji" title="チューリップ">🌷</div>
+					<div class="emoji" title="rose">🌹</div>
+					<div class="emoji" title="sunflower">🌻</div>
+					<div class="emoji" title="とうろもこし">🌽</div>
+					<div class="emoji" title="四葉のクローバー">🍀</div>
+					<div class="emoji" title="four leaf clover">🍀</div>
+					<div class="emoji" title="mushroom">🍄</div>
+					<div class="emoji" title="grapes">🍇</div>
+					<div class="emoji" title="watermelon">🍉</div>
+					<div class="emoji" title="tangerine">🍊</div>
+					<div class="emoji" title="ストロベリー">🍓</div>
+					<div class="emoji" title="strawberry">🍓</div>
+					<div class="emoji" title="meat on bone">🍖</div>
+					<div class="emoji" title="poultry leg">🍗</div>
+					<div class="emoji" title="カレーライス">🍛</div>
+					<div class="emoji" title="スパゲッティ">🍝</div>
+					<div class="emoji" title="フライドポテト">🍟</div>
+					<div class="emoji" title="ソフトクリーム">🍦</div>
+					<div class="emoji" title="icecream">🍦</div>
+					<div class="emoji" title="アイスクリーム">🍨</div>
+					<div class="emoji" title="doughnut">🍩</div>
+					<div class="emoji" title="チョコレート">🍫</div>
+					<div class="emoji" title="キャンディ">🍬</div>
+					<div class="emoji" title="ペロペロキャンディ">🍭</div>
+					<div class="emoji" title="lollipop">🍭</div>
+					<div class="emoji" title="ショートケーキ">🍰</div>
+					<div class="emoji" title="トロピカルドリンク">🍹</div>
+					<div class="emoji" title="バースデーケーキ">🎂</div>
+					<div class="emoji" title="クリスマスツリー">🎄</div>
+					<div class="emoji" title="サンタクロース">🎅</div>
+					<div class="emoji" title="リマインダーリボン">🎗</div>
+					<div class="emoji" title="スタジオマイク">🎙</div>
+					<div class="emoji" title="レベルスライダー">🎚</div>
+					<div class="emoji" title="コントロールノブ">🎛</div>
+					<div class="emoji" title="フィルムフレーム">🎞</div>
+					<div class="emoji" title="メリーゴーランド">🎠</div>
+					<div class="emoji" title="ジェットコースター">🎢</div>
+					<div class="emoji" title="fishing pole and fish">🎣</div>
+					<div class="emoji" title="ビデオカメラ">🎥</div>
+					<div class="emoji" title="game die">🎲</div>
+					<div class="emoji" title="flower playing cards">🎴</div>
+					<div class="emoji" title="ランニングシャツ">🎽</div>
+					<div class="emoji" title="running shirt with sash">🎽</div>
+					<div class="emoji" title="バスケットボール">🏀</div>
+					<div class="emoji" title="チェッカーフラグ">🏁</div>
+					<div class="emoji" title="スノーボード">🏂</div>
+					<div class="emoji" title="ラグビーボール">🏉</div>
+					<div class="emoji" title="ウエイトリフティング">🏋</div>
+					<div class="emoji" title="racing motorcycle">🏍</div>
+					<div class="emoji" title="ice hockey stick and puck">🏒</div>
+					<div class="emoji" title="snow capped mountain">🏔</div>
+					<div class="emoji" title="ビーチパラソル">🏖</div>
+					<div class="emoji" title="beach with umbrella">🏖</div>
+					<div class="emoji" title="クラシックな建物">🏛</div>
+					<div class="emoji" title="house with garden">🏡</div>
+					<div class="emoji" title="オフィスビル">🏢</div>
+					<div class="emoji" title="郵便局(ヨーロッパ風)">🏤</div>
+					<div class="emoji" title="waving white flag">🏳</div>
+					<div class="emoji" title="ハツカネズミ">🐁</div>
+					<div class="emoji" title="turtle">🐢</div>
+					<div class="emoji" title="hatching chick">🐣</div>
+					<div class="emoji" title="baby chick">🐤</div>
+					<div class="emoji" title="ヒトコブラクダ">🐪</div>
+					<div class="emoji" title="フタコブラクダ">🐫</div>
+					<div class="emoji" title="camel">🐫</div>
+					<div class="emoji" title="rabbit">🐰</div>
+					<div class="emoji" title="dragon face">🐲</div>
+					<div class="emoji" title="mouth">👄</div>
+					<div class="emoji" title="ブーイング">👎</div>
+					<div class="emoji" title="ハンドバッグ">👜</div>
+					<div class="emoji" title="bust in silhouette">👤</div>
+					<div class="emoji" title="busts in silhouette">👥</div>
+					<div class="emoji" title="two men holding hands">👬</div>
+					<div class="emoji" title="two women holding hands">👭</div>
+					<div class="emoji" title="バニーガール">👯</div>
+					<div class="emoji" title="person with blond hair">👱</div>
+					<div class="emoji" title="man with gua pi mao">👲</div>
+					<div class="emoji" title="construction worker">👷</div>
+					<div class="emoji" title="カップルのキス">💏</div>
+					<div class="emoji" title="カップルとハート">💑</div>
+					<div class="emoji" title="couple with heart">💑</div>
+					<div class="emoji" title="ハートブレイク">💔</div>
+					<div class="emoji" title="ハート(ドキドキ)">💗</div>
+					<div class="emoji" title="矢がささったハート">💘</div>
+					<div class="emoji" title="green heart">💚</div>
+					<div class="emoji" title="yellow heart">💛</div>
+					<div class="emoji" title="purple heart">💜</div>
+					<div class="emoji" title="リボンがけのハート">💝</div>
+					<div class="emoji" title="ハートマーク">💟</div>
+					<div class="emoji" title="よくできました">💮</div>
+					<div class="emoji" title="currency exchange">💱</div>
+					<div class="emoji" title="heavy dollar sign">💲</div>
+					<div class="emoji" title="クレジットカード">💳</div>
+					<div class="emoji" title="飛んでいくお金">💸</div>
+					<div class="emoji" title="money with wings">💸</div>
+					<div class="emoji" title="フロッピーディスク">💾</div>
+					<div class="emoji" title="日めくりカレンダー">📆</div>
+					<div class="emoji" title="インデックスカード">📇</div>
+					<div class="emoji" title="chart with upwards trend">📈</div>
+					<div class="emoji" title="クリップボード">📋</div>
+					<div class="emoji" title="プッシュピン">📍</div>
+					<div class="emoji" title="ポケットベル">📟</div>
+					<div class="emoji" title="envelope with arrow">📩</div>
+					<div class="emoji" title="メールボックス">📪</div>
+					<div class="emoji" title="メールボックス2">📫</div>
+					<div class="emoji" title="メールボックス3">📬</div>
+					<div class="emoji" title="mailbox with mail">📬</div>
+					<div class="emoji" title="メールボックス4">📭</div>
+					<div class="emoji" title="mailbox with no mail">📭</div>
+					<div class="emoji" title="マナーモード">📳</div>
+					<div class="emoji" title="mobile phone off">📴</div>
+					<div class="emoji" title="no mobile phones">📵</div>
+					<div class="emoji" title="camera with flash">📸</div>
+					<div class="emoji" title="ビデオテープ">📼</div>
+					<div class="emoji" title="プロジェクター">📽</div>
+					<div class="emoji" title="twisted rightwards arrows">🔀</div>
+					<div class="emoji" title="arrows counterclockwise">🔄</div>
+					<div class="emoji" title="closed lock with key">🔐</div>
+					<div class="emoji" title="サウンドオフ">🔕</div>
+					<div class="emoji" title="ブックマーク">🔖</div>
+					<div class="emoji" title="ラジオボタン">🔘</div>
+					<div class="emoji" title="flashlight">🔦</div>
+					<div class="emoji" title="crystal ball">🔮</div>
+					<div class="emoji" title="black square button">🔲</div>
+					<div class="emoji" title="四角ボタン(白)">🔳</div>
+					<div class="emoji" title="white square button">🔳</div>
+					<div class="emoji" title="large blue circle">🔵</div>
+					<div class="emoji" title="大菱形(オレンジ)">🔶</div>
+					<div class="emoji" title="large orange diamond">🔶</div>
+					<div class="emoji" title="large blue diamond">🔷</div>
+					<div class="emoji" title="小菱形(オレンジ)">🔸</div>
+					<div class="emoji" title="small orange diamond">🔸</div>
+					<div class="emoji" title="small blue diamond">🔹</div>
+					<div class="emoji" title="small red triangle">🔺</div>
+					<div class="emoji" title="small red triangle down">🔻</div>
+					<div class="emoji" title="arrow down small">🔽</div>
+					<div class="emoji" title="ジョイスティック">🕹</div>
+					<div class="emoji" title="lower left ballpoint pen">🖊</div>
+					<div class="emoji" title="lower left fountain pen">🖋</div>
+					<div class="emoji" title="lower left paintbrush">🖌</div>
+					<div class="emoji" title="カードインデックス">🗂</div>
+					<div class="emoji" title="rolled up newspaper">🗞</div>
+					<div class="emoji" title="left speech bubble">🗨</div>
+					<div class="emoji" title="left anger bubble">🗯</div>
+					<div class="emoji" title="right anger bubble">🗯</div>
+					<div class="emoji" title="ballot box with ballot">🗳</div>
+					<div class="emoji" title="face with rolling eyes">🙄</div>
+					<div class="emoji" title="see no evil">🙈</div>
+					<div class="emoji" title="hear no evil">🙉</div>
+					<div class="emoji" title="キャラクター(挙手)">🙋</div>
+					<div class="emoji" title="person frowning">🙍</div>
+					<div class="emoji" title="ヘリコプター">🚁</div>
+					<div class="emoji" title="蒸気機関車">🚂</div>
+					<div class="emoji" title="steam locomotive">🚂</div>
+					<div class="emoji" title="bullettrain side">🚄</div>
+					<div class="emoji" title="bullettrain front">🚅</div>
+					<div class="emoji" title="トロリーバス">🚎</div>
+					<div class="emoji" title="マイクロバス">🚐</div>
+					<div class="emoji" title="oncoming automobile">🚘</div>
+					<div class="emoji" title="articulated lorry">🚛</div>
+					<div class="emoji" title="トラクター">🚜</div>
+					<div class="emoji" title="モノレール">🚝</div>
+					<div class="emoji" title="mountain railway">🚞</div>
+					<div class="emoji" title="suspension railway">🚟</div>
+					<div class="emoji" title="ロープウェイ">🚠</div>
+					<div class="emoji" title="mountain cableway">🚠</div>
+					<div class="emoji" title="ロープウェイ2">🚡</div>
+					<div class="emoji" title="aerial tramway">🚡</div>
+					<div class="emoji" title="モーターボート">🚤</div>
+					<div class="emoji" title="vertical traffic light">🚦</div>
+					<div class="emoji" title="triangular flag on post">🚩</div>
+					<div class="emoji" title="no entry sign">🚫</div>
+					<div class="emoji" title="put litter in its place">🚮</div>
+					<div class="emoji" title="non potable water">🚱</div>
+					<div class="emoji" title="赤ちゃんマーク">🚼</div>
+					<div class="emoji" title="一時預かり手荷物">🛅</div>
+					<div class="emoji" title="ショッピングカート">🛒</div>
+					<div class="emoji" title="キックスケーター">🛴</div>
+					<div class="emoji" title="sign of the horns">🤘</div>
+					<div class="emoji" title="raised back of hand">🤚</div>
+					<div class="emoji" title="ボクシンググローブ">🥊</div>
+					<div class="emoji" title="牛乳">🥛</div>
+					<div class="emoji" title="peanuts">🥜</div>
+					<div class="emoji" title="コピーライトマーク">©</div>
+					<div class="emoji" title="レジスタードマーク">®</div>
+					<div class="emoji" title="トレードマーク">™</div>
+					<div class="emoji" title="インフォメーション">ℹ</div>
+					<div class="emoji" title="left right arrow">↔</div>
+					<div class="emoji" title="左斜め上向き矢印">↖</div>
+					<div class="emoji" title="arrow upper left">↖</div>
+					<div class="emoji" title="右斜め上向き矢印">↗</div>
+					<div class="emoji" title="arrow upper right">↗</div>
+					<div class="emoji" title="右斜め下向き矢印">↘</div>
+					<div class="emoji" title="arrow lower right">↘</div>
+					<div class="emoji" title="左斜め下向き矢印">↙</div>
+					<div class="emoji" title="arrow lower left">↙</div>
+					<div class="emoji" title="leftwards arrow with hook">↩</div>
+					<div class="emoji" title="arrow right hook">↪</div>
+					<div class="emoji" title="arrow double down">⏬</div>
+					<div class="emoji" title="alarm clock">⏰</div>
+					<div class="emoji" title="hourglass flowing sand">⏳</div>
+					<div class="emoji" title="black small square">▪</div>
+					<div class="emoji" title="white small square">▫</div>
+					<div class="emoji" title="white medium square">◻</div>
+					<div class="emoji" title="black medium square">◼</div>
+					<div class="emoji" title="white medium small square">◽</div>
+					<div class="emoji" title="black medium small square">◾</div>
+					<div class="emoji" title="チェックボックス">☑</div>
+					<div class="emoji" title="ballot box with check">☑</div>
+					<div class="emoji" title="コーヒー">☕</div>
+					<div class="emoji" title="black left pointing index">☚</div>
+					<div class="emoji" title="black right pointing index">☛</div>
+					<div class="emoji" title="radioactive sign">☢</div>
+					<div class="emoji" title="biohazard sign">☣</div>
+					<div class="emoji" title="peace symbol">☮</div>
+					<div class="emoji" title="first quarter moon">☽</div>
+					<div class="emoji" title="last quarter moon">☾</div>
+					<div class="emoji" title="west syriac cross">♰</div>
+					<div class="emoji" title="east syriac cross">♱</div>
+					<div class="emoji" title="partially recycled paper symbol">♽</div>
+					<div class="emoji" title="white circle with dot right">⚆</div>
+					<div class="emoji" title="white circle with two dots">⚇</div>
+					<div class="emoji" title="vertical male with stroke sign">⚨</div>
+					<div class="emoji" title="錬金術(マグネシウム)">⚩</div>
+					<div class="emoji" title="unmarried partnership symbol">⚯</div>
+					<div class="emoji" title="晴れときどき曇り">⛅</div>
+					<div class="emoji" title="helmet with white cross">⛑</div>
+					<div class="emoji" title="チェックマーク2">✅</div>
+					<div class="emoji" title="チェックマーク">✔</div>
+					<div class="emoji" title="heavy check mark">✔</div>
+					<div class="emoji" title="heavy multiplication x">✖</div>
+					<div class="emoji" title="eight spoked asterisk">✳</div>
+					<div class="emoji" title="eight pointed black star">✴</div>
+					<div class="emoji" title="grey question">❔</div>
+					<div class="emoji" title="heavy plus sign">➕</div>
+					<div class="emoji" title="heavy minus sign">➖</div>
+					<div class="emoji" title="フリーダイヤル">➿</div>
+					<div class="emoji" title="double curly loop">➿</div>
+					<div class="emoji" title="上向きカーブ矢印">⤴</div>
+					<div class="emoji" title="下向きカーブ矢印">⤵</div>
+					<div class="emoji" title="arrow heading down">⤵</div>
+					<div class="emoji" title="black large square">⬛</div>
+					<div class="emoji" title="white large square">⬜</div>
+					<div class="emoji" title="パート交代マーク">〽️</div>
+					<div class="emoji" title="part alternation mark">〽️</div>
+					<div class="emoji" title="ティラノサウルス">🦖</div>
+					<div class="emoji" title="giraffe">🦒</div>
+					<div class="emoji" title="水球">🤽</div>
+					<div class="emoji" title="water polo">🤽</div>
+					<div class="emoji" title="hot dog">🌭</div>
+					<div class="emoji" title="脳">🧠</div>
+					<div class="emoji" title="brain">🧠</div>
+					<div class="emoji" title="ココマーク">🈁</div>
+					<div class="emoji" title="application mark">🈸</div>
+					<div class="emoji" title="営業中マーク">🈺</div>
+					<div class="emoji" title="night with stars">🌃</div>
+					<div class="emoji" title="都市の夕暮れ">🌆</div>
+					<div class="emoji" title="bridge at night">🌉</div>
+					<div class="emoji" title="地球(アメリカ)">🌎</div>
+					<div class="emoji" title="地球(経緯度線)">🌐</div>
+					<div class="emoji" title="cloud with rain">🌧</div>
+					<div class="emoji" title="cloud with snow">🌨</div>
+					<div class="emoji" title="cactus">🌵</div>
+					<div class="emoji" title="ハイビスカス">🌺</div>
+					<div class="emoji" title="apple">🍎</div>
+					<div class="emoji" title="peach">🍑</div>
+					<div class="emoji" title="ramen">🍜</div>
+					<div class="emoji" title="bread">🍞</div>
+					<div class="emoji" title="パン">🍞</div>
+					<div class="emoji" title="fries">🍟</div>
+					<div class="emoji" title="エビフライ">🍤</div>
+					<div class="emoji" title="cookie">🍪</div>
+					<div class="emoji" title="fork and knife">🍴</div>
+					<div class="emoji" title="プレゼント">🎁</div>
+					<div class="emoji" title="studio microphone">🎙</div>
+					<div class="emoji" title="admission tickets">🎟</div>
+					<div class="emoji" title="シルクハット">🎩</div>
+					<div class="emoji" title="performing arts">🎭</div>
+					<div class="emoji" title="ビリヤード">🎱</div>
+					<div class="emoji" title="ボウリング">🎳</div>
+					<div class="emoji" title="メロディー">🎶</div>
+					<div class="emoji" title="musical keyboard">🎹</div>
+					<div class="emoji" title="トランペット">🎺</div>
+					<div class="emoji" title="フットボール">🏈</div>
+					<div class="emoji" title="camping">🏕</div>
+					<div class="emoji" title="スタジアム">🏟</div>
+					<div class="emoji" title="convenience store">🏪</div>
+					<div class="emoji" title="department store">🏬</div>
+					<div class="emoji" title="バラ飾り(白)">🏵</div>
+					<div class="emoji" title="snail">🐌</div>
+					<div class="emoji" title="racehorse">🐎</div>
+					<div class="emoji" title="monkey">🐒</div>
+					<div class="emoji" title="rooster">🐓</div>
+					<div class="emoji" title="cat">🐱</div>
+					<div class="emoji" title="frog">🐸</div>
+					<div class="emoji" title="point up 2">👆</div>
+					<div class="emoji" title="point right">👉</div>
+					<div class="emoji" title="バイバイ">👋</div>
+					<div class="emoji" title="オーケー">👌</div>
+					<div class="emoji" title="おっはー">👐</div>
+					<div class="emoji" title="帽子(女性向け)">👒</div>
+					<div class="emoji" title="bride with veil">👰</div>
+					<div class="emoji" title="工事現場の人">👷</div>
+					<div class="emoji" title="syringe">💉</div>
+					<div class="emoji" title="wedding">💒</div>
+					<div class="emoji" title="光るハート">💖</div>
+					<div class="emoji" title="cupid">💘</div>
+					<div class="emoji" title="ハート(青)">💙</div>
+					<div class="emoji" title="ハート(緑)">💚</div>
+					<div class="emoji" title="ハート(黄)">💛</div>
+					<div class="emoji" title="ハート(紫)">💜</div>
+					<div class="emoji" title="heart decoration">💟</div>
+					<div class="emoji" title="怒りマーク">💢</div>
+					<div class="emoji" title="睡眠マーク">💤</div>
+					<div class="emoji" title="焦りマーク">💦</div>
+					<div class="emoji" title="speech balloon">💬</div>
+					<div class="emoji" title="thought balloon">💭</div>
+					<div class="emoji" title="フォルダ(閉)">📁</div>
+					<div class="emoji" title="open file folder">📂</div>
+					<div class="emoji" title="フォルダ(開)">📂</div>
+					<div class="emoji" title="page with curl">📃</div>
+					<div class="emoji" title="page facing up">📄</div>
+					<div class="emoji" title="triangular ruler">📐</div>
+					<div class="emoji" title="閉じられた本">📕</div>
+					<div class="emoji" title="telephone receiver">📞</div>
+					<div class="emoji" title="satellite">🛰</div>
+					<div class="emoji" title="package">📦</div>
+					<div class="emoji" title="プレゼント2">📦</div>
+					<div class="emoji" title="incoming envelope">📨</div>
+					<div class="emoji" title="メール送信">📩</div>
+					<div class="emoji" title="ポストホルン">📯</div>
+					<div class="emoji" title="ハンディカム">📹</div>
+					<div class="emoji" title="1曲リピート">🔂</div>
+					<div class="emoji" title="再読み込み">🔃</div>
+					<div class="emoji" title="読み込み中">🔄</div>
+					<div class="emoji" title="明るさ(暗)">🔅</div>
+					<div class="emoji" title="明るさ(明)">🔆</div>
+					<div class="emoji" title="ロック(解除)">🔓</div>
+					<div class="emoji" title="telescope">🔭</div>
+					<div class="emoji" title="six pointed star">🔯</div>
+					<div class="emoji" title="大菱形(青)">🔷</div>
+					<div class="emoji" title="小菱形(青)">🔹</div>
+					<div class="emoji" title="ボールペン">🖊</div>
+					<div class="emoji" title="サンドイッチ">🥪</div>
+					<div class="emoji" title="おみくじ入りクッキー">🥠</div>
+					<div class="emoji" title="orange heart">🧡</div>
+					<div class="emoji" title="ハート(オレンジ)">🧡</div>
+					<div class="emoji" title="sled">🛷</div>
+					<div class="emoji" title="そり">🛷</div>
+					<div class="emoji" title="curling stone">🥌</div>
+					<div class="emoji" title="カーリングストーン">🥌</div>
+					<div class="emoji" title="face with thermometer">🤒</div>
+					<div class="emoji" title="face with head bandage">🤕</div>
+					<div class="emoji" title="left facing fist">🤛</div>
+					<div class="emoji" title="right facing fist">🤜</div>
+					<div class="emoji" title="hand with index and middle finger crossed">🤞</div>
+					<div class="emoji" title="face with cowboy hat">🤠</div>
+					<div class="emoji" title="person doing cartwheel">🤸</div>
+					<div class="emoji" title="drum with drumsticks">🥁</div>
+					<div class="emoji" title="telephone">☎</div>
+					<div class="emoji" title="atom symbol">⚛</div>
+					<div class="emoji" title="無料マーク">🈚</div>
+					<div class="emoji" title="10キー">🔟</div>
+					<div class="emoji" title="母なる自然の風">🌬</div>
+					<div class="emoji" title="face with one eyebrow raised">🤨</div>
+					<div class="emoji" title="hedgehog">🦔</div>
+					<div class="emoji" title="ブロッコリー">🥦</div>
+					<div class="emoji" title="ILY sign">🤟</div>
+					<div class="emoji" title="ILY sign(wh)">🤟🏻</div>
+					<div class="emoji" title="ILY sign(p)">🤟🏼</div>
+					<div class="emoji" title="ILY sign(ye)">🤟🏽</div>
+					<div class="emoji" title="ILY sign(br)">🤟🏾</div>
+					<div class="emoji" title="ILY sign(bk)">🤟🏿</div>
+					<div class="emoji" title="breastfeeding">🤱</div>
+					<div class="emoji" title="授乳">🤱</div>
+					<div class="emoji" title="climber">🧗</div>
+					<div class="emoji" title="岩登り">🧗</div>
+					<div class="emoji" title="starry eyed">🤩</div>
+					<div class="emoji" title="夢想的な顔">🤩</div>
+					<div class="emoji" title="pie">🥧</div>
+					<div class="emoji" title="パイ">🥧</div>
+					<div class="emoji" title="gloves">🧤</div>
+					<div class="emoji" title="グローブ">🧤</div>
+					<div class="emoji" title="T-Rex">🦖</div>
+					<div class="emoji" title="愛しているのサイン">🤟</div>
+					<div class="emoji" title="愛してるのサイン(白)">🤟🏻</div>
+					<div class="emoji" title="愛してるのサイン(桃)">🤟🏼</div>
+					<div class="emoji" title="愛してるのサイン(黄)">🤟🏽</div>
+					<div class="emoji" title="愛してるのサイン(茶)">🤟🏾</div>
+					<div class="emoji" title="愛してるのサイン(黒)">🤟🏿</div>
+					<div class="emoji" title="地球(ヨーロッパ〜アフリカ)">🌍</div>
+					<div class="emoji" title="地球(アジア〜オーストラリア)">🌏</div>
+					<div class="emoji" title="ジャック・オ・ランタン">🎃</div>
+					<div class="emoji" title="×">✖</div>
+					<div class="emoji" title="＋">➕</div>
+					<div class="emoji" title="−">➖</div>
+					<div class="emoji" title="÷">➗</div>
+					<div class="emoji" title="ボルト＆ナット">🔩</div>
+					<div class="emoji" title="目玉焼き">🍳</div>
+					<div class="emoji" title="hand with first and index finger crossed(wh)">🤞🏻</div>
+					<div class="emoji" title="hand with first and index finger crossed(p)">🤞🏼</div>
+					<div class="emoji" title="hand with first and index finger crossed(ye)">🤞🏽</div>
+					<div class="emoji" title="hand with first and index finger crossed(br)">🤞🏾</div>
+					<div class="emoji" title="hand with first and index finger crossed(bk)">🤞🏿</div>
+					<div class="emoji" title="spy">🕵</div>
+					<div class="emoji" title="家族">👪</div>
+					<div class="emoji" title="100点満点">💯</div>
+					<div class="emoji" title="ジョーカー">🃏</div>
+					<div class="emoji" title="フリーマーク">🆓</div>
+					<div class="emoji" title="free mark">🈚</div>
+					<div class="emoji" title="specified mark">🈯</div>
+					<div class="emoji" title="指定マーク">🈯</div>
+					<div class="emoji" title="forbidden mark">🈲</div>
+					<div class="emoji" title="禁止マーク">🈲</div>
+					<div class="emoji" title="empty mark">🈳</div>
+					<div class="emoji" title="空マーク">🈳</div>
+					<div class="emoji" title="pass mark">🈴</div>
+					<div class="emoji" title="合格マーク">🈴</div>
+					<div class="emoji" title="full mark">🈵</div>
+					<div class="emoji" title="満マーク">🈵</div>
+					<div class="emoji" title="fee mark">🈶</div>
+					<div class="emoji" title="有料マーク">🈶</div>
+					<div class="emoji" title="month mark">🈷</div>
+					<div class="emoji" title="月マーク">🈷</div>
+					<div class="emoji" title="申マーク">🈸</div>
+					<div class="emoji" title="discount mark">🈹</div>
+					<div class="emoji" title="割引マーク">🈹</div>
+					<div class="emoji" title="お得マーク">🉐</div>
+					<div class="emoji" title="許可マーク">🉑</div>
+					<div class="emoji" title="closed umbrella">🌂</div>
+					<div class="emoji" title="日の出">🌅</div>
+					<div class="emoji" title="夜の橋">🌉</div>
+					<div class="emoji" title="earth africa">🌍</div>
+					<div class="emoji" title="earth americas">🌎</div>
+					<div class="emoji" title="earth asia">🌏</div>
+					<div class="emoji" title="三日月">🌒</div>
+					<div class="emoji" title="十三夜">🌔</div>
+					<div class="emoji" title="crescent moon">🌙</div>
+					<div class="emoji" title="glowing star">🌟</div>
+					<div class="emoji" title="輝く星">🌟</div>
+					<div class="emoji" title="流れ星">🌠</div>
+					<div class="emoji" title="thermometer">🌡</div>
+					<div class="emoji" title="温度計">🌡</div>
+					<div class="emoji" title="太陽と雲">🌤</div>
+					<div class="emoji" title="雲間の太陽">🌥</div>
+					<div class="emoji" title="太陽と雨雲">🌦</div>
+					<div class="emoji" title="ホットドッグ">🌭</div>
+					<div class="emoji" title="evergreen tree">🌲</div>
+					<div class="emoji" title="常緑樹">🌲</div>
+					<div class="emoji" title="落葉樹">🌳</div>
+					<div class="emoji" title="ヤシの木">🌴</div>
+					<div class="emoji" title="サボテン">🌵</div>
+					<div class="emoji" title="唐辛子">🌶</div>
+					<div class="emoji" title="cherry blossom">🌸</div>
+					<div class="emoji" title="桜">🌸</div>
+					<div class="emoji" title="ひまわり">🌻</div>
+					<div class="emoji" title="corn">🌽</div>
+					<div class="emoji" title="ear of rice">🌾</div>
+					<div class="emoji" title="ハーブ">🌿</div>
+					<div class="emoji" title="maple leaf">🍁</div>
+					<div class="emoji" title="もみじ">🍁</div>
+					<div class="emoji" title="fallen leaf">🍂</div>
+					<div class="emoji" title="落ち葉">🍂</div>
+					<div class="emoji" title="風に舞う葉">🍃</div>
+					<div class="emoji" title="きのこ">🍄</div>
+					<div class="emoji" title="トマト">🍅</div>
+					<div class="emoji" title="ブドウ">🍇</div>
+					<div class="emoji" title="メロン">🍈</div>
+					<div class="emoji" title="スイカ">🍉</div>
+					<div class="emoji" title="みかん">🍊</div>
+					<div class="emoji" title="レモン">🍋</div>
+					<div class="emoji" title="banana">🍌</div>
+					<div class="emoji" title="バナナ">🍌</div>
+					<div class="emoji" title="リンゴ">🍎</div>
+					<div class="emoji" title="green apple">🍏</div>
+					<div class="emoji" title="青リンゴ">🍏</div>
+					<div class="emoji" title="洋ナシ">🍐</div>
+					<div class="emoji" title="チェリー">🍒</div>
+					<div class="emoji" title="チキン">🍗</div>
+					<div class="emoji" title="せんべい">🍘</div>
+					<div class="emoji" title="おにぎり">🍙</div>
+					<div class="emoji" title="ごはん">🍚</div>
+					<div class="emoji" title="ラーメン">🍜</div>
+					<div class="emoji" title="sweet potato">🍠</div>
+					<div class="emoji" title="焼きいも">🍠</div>
+					<div class="emoji" title="だんご">🍡</div>
+					<div class="emoji" title="おでん">🍢</div>
+					<div class="emoji" title="fried shrimp">🍤</div>
+					<div class="emoji" title="fish cake">🍥</div>
+					<div class="emoji" title="なると">🍥</div>
+					<div class="emoji" title="shaved ice">🍧</div>
+					<div class="emoji" title="かき氷">🍧</div>
+					<div class="emoji" title="ice cream">🍨</div>
+					<div class="emoji" title="ドーナツ">🍩</div>
+					<div class="emoji" title="クッキー">🍪</div>
+					<div class="emoji" title="fortune cookie">🥠</div>
+					<div class="emoji" title="プリン">🍮</div>
+					<div class="emoji" title="honey pot">🍯</div>
+					<div class="emoji" title="ハチミツ">🍯</div>
+					<div class="emoji" title="お弁当">🍱</div>
+					<div class="emoji" title="日本酒">🍶</div>
+					<div class="emoji" title="カクテル">🍸</div>
+					<div class="emoji" title="tropical drink">🍹</div>
+					<div class="emoji" title="beer">🍺</div>
+					<div class="emoji" title="ビール">🍺</div>
+					<div class="emoji" title="beers">🍻</div>
+					<div class="emoji" title="baby bottle">🍼</div>
+					<div class="emoji" title="哺乳瓶">🍼</div>
+					<div class="emoji" title="fork and knife with plate">🍽</div>
+					<div class="emoji" title="popcorn">🍿</div>
+					<div class="emoji" title="リボン">🎀</div>
+					<div class="emoji" title="christmas tree">🎄</div>
+					<div class="emoji" title="fireworks">🎆</div>
+					<div class="emoji" title="線香花火">🎇</div>
+					<div class="emoji" title="クラッカー">🎉</div>
+					<div class="emoji" title="confetti ball">🎊</div>
+					<div class="emoji" title="くす玉">🎊</div>
+					<div class="emoji" title="tanabata tree">🎋</div>
+					<div class="emoji" title="crossed flags">🎌</div>
+					<div class="emoji" title="ひな祭り">🎎</div>
+					<div class="emoji" title="お月見">🎑</div>
+					<div class="emoji" title="school satchel">🎒</div>
+					<div class="emoji" title="ランドセル">🎒</div>
+					<div class="emoji" title="military medal">🎖</div>
+					<div class="emoji" title="reminder ribbon">🎗</div>
+					<div class="emoji" title="level slider">🎚</div>
+					<div class="emoji" title="control knobs">🎛</div>
+					<div class="emoji" title="film frames">🎞</div>
+					<div class="emoji" title="carousel horse">🎠</div>
+					<div class="emoji" title="ferris wheel">🎡</div>
+					<div class="emoji" title="roller coaster">🎢</div>
+					<div class="emoji" title="movie camera">🎥</div>
+					<div class="emoji" title="headphone">🎧</div>
+					<div class="emoji" title="ヘッドホン">🎧</div>
+					<div class="emoji" title="パレット">🎨</div>
+					<div class="emoji" title="circus tent">🎪</div>
+					<div class="emoji" title="サーカス">🎪</div>
+					<div class="emoji" title="チケット">🎫</div>
+					<div class="emoji" title="カチンコ">🎬</div>
+					<div class="emoji" title="slot machine">🎰</div>
+					<div class="emoji" title="スロット">🎰</div>
+					<div class="emoji" title="サイコロ">🎲</div>
+					<div class="emoji" title="musical note">🎵</div>
+					<div class="emoji" title="saxophone">🎷</div>
+					<div class="emoji" title="サックス">🎷</div>
+					<div class="emoji" title="バイオリン">🎻</div>
+					<div class="emoji" title="musical score">🎼</div>
+					<div class="emoji" title="chequered flag">🏁</div>
+					<div class="emoji" title="ランニング">🏃</div>
+					<div class="emoji" title="サーフィン">🏄</div>
+					<div class="emoji" title="sports medal">🏅</div>
+					<div class="emoji" title="トロフィー">🏆</div>
+					<div class="emoji" title="horse racing">🏇</div>
+					<div class="emoji" title="rugby football">🏉</div>
+					<div class="emoji" title="スイミング">🏊</div>
+					<div class="emoji" title="weight lifter">🏋</div>
+					<div class="emoji" title="ゴルファー">🏌</div>
+					<div class="emoji" title="volleyball">🏐</div>
+					<div class="emoji" title="バレーボール">🏐</div>
+					<div class="emoji" title="アイスホッケー">🏒</div>
+					<div class="emoji" title="キャンプ">🏕</div>
+					<div class="emoji" title="集合住宅">🏘</div>
+					<div class="emoji" title="cityscape">🏙</div>
+					<div class="emoji" title="都市の景観">🏙</div>
+					<div class="emoji" title="desert island">🏝</div>
+					<div class="emoji" title="無人島">🏝</div>
+					<div class="emoji" title="national park">🏞</div>
+					<div class="emoji" title="国立公園">🏞</div>
+					<div class="emoji" title="post office">🏣</div>
+					<div class="emoji" title="郵便局">🏣</div>
+					<div class="emoji" title="ホテル">🏨</div>
+					<div class="emoji" title="izakaya lantern">🏮</div>
+					<div class="emoji" title="居酒屋">🏮</div>
+					<div class="emoji" title="japanese castle">🏯</div>
+					<div class="emoji" title="european castle">🏰</div>
+					<div class="emoji" title="バドミントン">🏸</div>
+					<div class="emoji" title="アンフォラ">🏺</div>
+					<div class="emoji" title="bow and arrow">🏹</div>
+					<div class="emoji" title="rat">🐀</div>
+					<div class="emoji" title="ネズミ">🐀</div>
+					<div class="emoji" title="water buffalo">🐃</div>
+					<div class="emoji" title="ヒョウ">🐆</div>
+					<div class="emoji" title="ウサギ2">🐇</div>
+					<div class="emoji" title="ドラゴン">🐉</div>
+					<div class="emoji" title="whale2">🐋</div>
+					<div class="emoji" title="クジラ2">🐋</div>
+					<div class="emoji" title="カタツムリ">🐌</div>
+					<div class="emoji" title="snake">🐍</div>
+					<div class="emoji" title="ヒツジ">🐑</div>
+					<div class="emoji" title="ニワトリ">🐔</div>
+					<div class="emoji" title="pig2">🐖</div>
+					<div class="emoji" title="イノシシ">🐗</div>
+					<div class="emoji" title="ミツバチ">🐝</div>
+					<div class="emoji" title="てんとう虫">🐞</div>
+					<div class="emoji" title="tropical fish">🐠</div>
+					<div class="emoji" title="熱帯魚">🐠</div>
+					<div class="emoji" title="孵化ヒヨコ">🐣</div>
+					<div class="emoji" title="ヒヨコ">🐤</div>
+					<div class="emoji" title="hatched chick">🐥</div>
+					<div class="emoji" title="ヒヨコ2">🐥</div>
+					<div class="emoji" title="ペンギン">🐧</div>
+					<div class="emoji" title="コアラ">🐨</div>
+					<div class="emoji" title="poodle">🐩</div>
+					<div class="emoji" title="プードル">🐩</div>
+					<div class="emoji" title="dromedary camel">🐪</div>
+					<div class="emoji" title="イルカ">🐬</div>
+					<div class="emoji" title="mouse">🐭</div>
+					<div class="emoji" title="ネズミ2">🐭</div>
+					<div class="emoji" title="cow">🐮</div>
+					<div class="emoji" title="tiger">🐯</div>
+					<div class="emoji" title="ウサギ">🐰</div>
+					<div class="emoji" title="ドラゴン2">🐲</div>
+					<div class="emoji" title="whale">🐳</div>
+					<div class="emoji" title="クジラ">🐳</div>
+					<div class="emoji" title="horse">🐴</div>
+					<div class="emoji" title="monkey face">🐵</div>
+					<div class="emoji" title="dog">🐶</div>
+					<div class="emoji" title="pig">🐷</div>
+					<div class="emoji" title="カエル">🐸</div>
+					<div class="emoji" title="ハムスター">🐹</div>
+					<div class="emoji" title="wolf">🐺</div>
+					<div class="emoji" title="オオカミ">🐺</div>
+					<div class="emoji" title="panda face">🐼</div>
+					<div class="emoji" title="パンダ">🐼</div>
+					<div class="emoji" title="pig nose">🐽</div>
+					<div class="emoji" title="足跡(動物)">🐾</div>
+					<div class="emoji" title="シマリス">🐿</div>
+					<div class="emoji" title="point down">👇</div>
+					<div class="emoji" title="point left">👈</div>
+					<div class="emoji" title="パンチ">👊</div>
+					<div class="emoji" title="ok hand">👌</div>
+					<div class="emoji" title="グッド">👍</div>
+					<div class="emoji" title="thumbsdown">👎</div>
+					<div class="emoji" title="拍手">👏</div>
+					<div class="emoji" title="open hands">👐</div>
+					<div class="emoji" title="ネクタイ">👔</div>
+					<div class="emoji" title="ジーンズ">👖</div>
+					<div class="emoji" title="womans clothes">👚</div>
+					<div class="emoji" title="小銭入れ">👛</div>
+					<div class="emoji" title="athletic shoe">👟</div>
+					<div class="emoji" title="ハイヒール">👠</div>
+					<div class="emoji" title="サンダル">👡</div>
+					<div class="emoji" title="adult">🧑</div>
+					<div class="emoji" title="大人">🧑</div>
+					<div class="emoji" title="男の人">👨</div>
+					<div class="emoji" title="woman">👩</div>
+					<div class="emoji" title="女の人">👩</div>
+					<div class="emoji" title="police officer">👮</div>
+					<div class="emoji" title="金髪">👱</div>
+					<div class="emoji" title="turban">👳</div>
+					<div class="emoji" title="ターバン">👳</div>
+					<div class="emoji" title="おじいさん">👴</div>
+					<div class="emoji" title="おばあさん">👵</div>
+					<div class="emoji" title="赤ちゃん">👶</div>
+					<div class="emoji" title="建設労働者">👷</div>
+					<div class="emoji" title="japanese ogre">👹</div>
+					<div class="emoji" title="なまはげ">👹</div>
+					<div class="emoji" title="japanese goblin">👺</div>
+					<div class="emoji" title="エイリアン">👽</div>
+					<div class="emoji" title="space invader">👾</div>
+					<div class="emoji" title="宇宙怪物">👾</div>
+					<div class="emoji" title="マッサージ">💆</div>
+					<div class="emoji" title="kiss">💋</div>
+					<div class="emoji" title="love letter">💌</div>
+					<div class="emoji" title="結婚式">💒</div>
+					<div class="emoji" title="broken heart">💔</div>
+					<div class="emoji" title="bulb">💡</div>
+					<div class="emoji" title="zzz">💤</div>
+					<div class="emoji" title="sweat drops">💦</div>
+					<div class="emoji" title="汗たらり">💧</div>
+					<div class="emoji" title="ダッシュ">💨</div>
+					<div class="emoji" title="力こぶ">💪</div>
+					<div class="emoji" title="目が回る">💫</div>
+					<div class="emoji" title="フキダシ">💬</div>
+					<div class="emoji" title="フキダシ2">💭</div>
+					<div class="emoji" title="white flower">💮</div>
+					<div class="emoji" title="credit card">💳</div>
+					<div class="emoji" title="ユーロ札">💶</div>
+					<div class="emoji" title="ポンド札">💷</div>
+					<div class="emoji" title="パソコン">💻</div>
+					<div class="emoji" title="briefcase">💼</div>
+					<div class="emoji" title="仕事カバン">💼</div>
+					<div class="emoji" title="floppy disk">💾</div>
+					<div class="emoji" title="file folder">📁</div>
+					<div class="emoji" title="カレンダー">📅</div>
+					<div class="emoji" title="bar chart">📊</div>
+					<div class="emoji" title="棒グラフ">📊</div>
+					<div class="emoji" title="clipboard">📋</div>
+					<div class="emoji" title="round pushpin">📍</div>
+					<div class="emoji" title="paperclip">📎</div>
+					<div class="emoji" title="クリップ">📎</div>
+					<div class="emoji" title="straight ruler">📏</div>
+					<div class="emoji" title="三角定規">📐</div>
+					<div class="emoji" title="bookmark tabs">📑</div>
+					<div class="emoji" title="closed book">📕</div>
+					<div class="emoji" title="開かれた本">📖</div>
+					<div class="emoji" title="orange book">📙</div>
+					<div class="emoji" title="本(オレンジ)">📙</div>
+					<div class="emoji" title="スクロール">📜</div>
+					<div class="emoji" title="アンテナ">📡</div>
+					<div class="emoji" title="メガホン">📣</div>
+					<div class="emoji" title="outbox tray">📤</div>
+					<div class="emoji" title="送信BOX">📤</div>
+					<div class="emoji" title="inbox tray">📥</div>
+					<div class="emoji" title="受信BOX">📥</div>
+					<div class="emoji" title="eメール">📧</div>
+					<div class="emoji" title="mailbox closed">📪</div>
+					<div class="emoji" title="postal horn">📯</div>
+					<div class="emoji" title="newspaper">📰</div>
+					<div class="emoji" title="mobile phone">📱</div>
+					<div class="emoji" title="携帯電話">📱</div>
+					<div class="emoji" title="着信中">📲</div>
+					<div class="emoji" title="vibration mode">📳</div>
+					<div class="emoji" title="電源OFF">📴</div>
+					<div class="emoji" title="使用禁止">📵</div>
+					<div class="emoji" title="電波状況">📶</div>
+					<div class="emoji" title="video camera">📹</div>
+					<div class="emoji" title="film projector">📽</div>
+					<div class="emoji" title="prayer beads">📿</div>
+					<div class="emoji" title="ランダム">🔀</div>
+					<div class="emoji" title="リピート">🔁</div>
+					<div class="emoji" title="repeat one">🔂</div>
+					<div class="emoji" title="ミュート">🔇</div>
+					<div class="emoji" title="音量(小)">🔉</div>
+					<div class="emoji" title="loud sound">🔊</div>
+					<div class="emoji" title="音量(大)">🔊</div>
+					<div class="emoji" title="バッテリー">🔋</div>
+					<div class="emoji" title="electric plug">🔌</div>
+					<div class="emoji" title="コンセント">🔌</div>
+					<div class="emoji" title="虫めがね">🔍</div>
+					<div class="emoji" title="no bell">🔕</div>
+					<div class="emoji" title="bookmark">🔖</div>
+					<div class="emoji" title="リンク">🔗</div>
+					<div class="emoji" title="radio button">🔘</div>
+					<div class="emoji" title="underage">🔞</div>
+					<div class="emoji" title="keycap ten">🔟</div>
+					<div class="emoji" title="capital abcd">🔠</div>
+					<div class="emoji" title="大文字">🔠</div>
+					<div class="emoji" title="小文字">🔡</div>
+					<div class="emoji" title="懐中電灯">🔦</div>
+					<div class="emoji" title="ハンマー">🔨</div>
+					<div class="emoji" title="nut and bolt">🔩</div>
+					<div class="emoji" title="microscope">🔬</div>
+					<div class="emoji" title="若葉マーク">🔰</div>
+					<div class="emoji" title="オーム">🕉</div>
+					<div class="emoji" title="シナゴーグ">🕍</div>
+					<div class="emoji" title="clock1030">🕥</div>
+					<div class="emoji" title="clock1130">🕦</div>
+					<div class="emoji" title="clock1230">🕧</div>
+					<div class="emoji" title="candle">🕯</div>
+					<div class="emoji" title="ロウソク">🕯</div>
+					<div class="emoji" title="置き時計">🕰</div>
+					<div class="emoji" title="サングラス">🕶</div>
+					<div class="emoji" title="spider">🕷</div>
+					<div class="emoji" title="クリップ2">🖇</div>
+					<div class="emoji" title="クレヨン">🖍</div>
+					<div class="emoji" title="raised hand with fingers splayed">🖐</div>
+					<div class="emoji" title="パー2">🖐</div>
+					<div class="emoji" title="中指">🖕</div>
+					<div class="emoji" title="パー4">🖖</div>
+					<div class="emoji" title="プリンター">🖨</div>
+					<div class="emoji" title="trackball">🖲</div>
+					<div class="emoji" title="card file box">🗃</div>
+					<div class="emoji" title="file cabinet">🗄</div>
+					<div class="emoji" title="compression">🗜</div>
+					<div class="emoji" title="old key">🗝</div>
+					<div class="emoji" title="dagger knife">🗡</div>
+					<div class="emoji" title="投票箱">🗳</div>
+					<div class="emoji" title="world map">🗺</div>
+					<div class="emoji" title="mount fuji">🗻</div>
+					<div class="emoji" title="富士山">🗻</div>
+					<div class="emoji" title="tokyo tower">🗼</div>
+					<div class="emoji" title="東京タワー">🗼</div>
+					<div class="emoji" title="自由の女神">🗽</div>
+					<div class="emoji" title="japan">🗾</div>
+					<div class="emoji" title="モアイ像">🗿</div>
+					<div class="emoji" title="うっしっし">😁</div>
+					<div class="emoji" title="泣き笑い">😂</div>
+					<div class="emoji" title="天使の笑顔">😇</div>
+					<div class="emoji" title="怒り(悪魔)">😈</div>
+					<div class="emoji" title="にこにこ">😊</div>
+					<div class="emoji" title="目がハート">😍</div>
+					<div class="emoji" title="sunglasses">😎</div>
+					<div class="emoji" title="neutral face">😐</div>
+					<div class="emoji" title="expressionless">😑</div>
+					<div class="emoji" title="しょんぼり">😔</div>
+					<div class="emoji" title="confounded">😖</div>
+					<div class="emoji" title="kissing heart">😘</div>
+					<div class="emoji" title="投げキッス">😘</div>
+					<div class="emoji" title="チューしよ">😙</div>
+					<div class="emoji" title="ふくれっ面">😡</div>
+					<div class="emoji" title="がまん顔">😣</div>
+					<div class="emoji" title="しかめっ面">😦</div>
+					<div class="emoji" title="astonished">😲</div>
+					<div class="emoji" title="no mouth">😶</div>
+					<div class="emoji" title="にこ(ネコ)">😺</div>
+					<div class="emoji" title="ぷー(ネコ)">😾</div>
+					<div class="emoji" title="upside down face">🙃</div>
+					<div class="emoji" title="rocket">🚀</div>
+					<div class="emoji" title="train">🚆</div>
+					<div class="emoji" title="metro">🚇</div>
+					<div class="emoji" title="station">🚉</div>
+					<div class="emoji" title="バス">🚌</div>
+					<div class="emoji" title="バス2">🚍</div>
+					<div class="emoji" title="busstop">🚏</div>
+					<div class="emoji" title="minibus">🚐</div>
+					<div class="emoji" title="車2">🚘</div>
+					<div class="emoji" title="truck">🚚</div>
+					<div class="emoji" title="tractor">🚜</div>
+					<div class="emoji" title="monorail">🚝</div>
+					<div class="emoji" title="rowboat">🚣</div>
+					<div class="emoji" title="traffic light">🚥</div>
+					<div class="emoji" title="rotating light">🚨</div>
+					<div class="emoji" title="no smoking">🚭</div>
+					<div class="emoji" title="ゴミ箱">🚮</div>
+					<div class="emoji" title="飲料水">🚰</div>
+					<div class="emoji" title="非飲料水">🚱</div>
+					<div class="emoji" title="no bicycles">🚳</div>
+					<div class="emoji" title="bicyclist">🚴</div>
+					<div class="emoji" title="自転車乗り">🚴</div>
+					<div class="emoji" title="通学路">🚸</div>
+					<div class="emoji" title="shower">🚿</div>
+					<div class="emoji" title="シャワー">🚿</div>
+					<div class="emoji" title="place of worship">🛐</div>
+					<div class="emoji" title="octagonal sign">🛑</div>
+					<div class="emoji" title="motor scooter">🛵</div>
+					<div class="emoji" title="スクーター">🛵</div>
+					<div class="emoji" title="zipper mouth face">🤐</div>
+					<div class="emoji" title="ロボット">🤖</div>
+					<div class="emoji" title="角の証">🤘</div>
+					<div class="emoji" title="handshake">🤝</div>
+					<div class="emoji" title="指交差">🤞</div>
+					<div class="emoji" title="カウボーイ">🤠</div>
+					<div class="emoji" title="nauseated face">🤢</div>
+					<div class="emoji" title="笑い転げる">🤣</div>
+					<div class="emoji" title="pregnant woman">🤰</div>
+					<div class="emoji" title="自撮り">🤳</div>
+					<div class="emoji" title="man in tuxedo">🤵</div>
+					<div class="emoji" title="タキシード">🤵</div>
+					<div class="emoji" title="ジャグリング">🤹</div>
+					<div class="emoji" title="フェンシング">🤺</div>
+					<div class="emoji" title="ハンドボール">🤾</div>
+					<div class="emoji" title="しおれた花">🥀</div>
+					<div class="emoji" title="乾杯(グラス)">🥂</div>
+					<div class="emoji" title="タンブラー">🥃</div>
+					<div class="emoji" title="ゴールネット">🥅</div>
+					<div class="emoji" title="first place medal">🥇</div>
+					<div class="emoji" title="second place medal">🥈</div>
+					<div class="emoji" title="third place medal">🥉</div>
+					<div class="emoji" title="クロワッサン">🥐</div>
+					<div class="emoji" title="アボカド">🥑</div>
+					<div class="emoji" title="ジャガイモ">🥔</div>
+					<div class="emoji" title="glass of milk">🥛</div>
+					<div class="emoji" title="ピーナッツ">🥜</div>
+					<div class="emoji" title="キウイフルーツ">🥝</div>
+					<div class="emoji" title="パンケーキ">🥞</div>
+					<div class="emoji" title="turkey">🦃</div>
+					<div class="emoji" title="hourglass">⌛</div>
+					<div class="emoji" title="ascending node">☊</div>
+					<div class="emoji" title="white shogi piece">☖</div>
+					<div class="emoji" title="カドゥケウス">☤</div>
+					<div class="emoji" title="星と三日月">☪</div>
+					<div class="emoji" title="イラン国章">☫</div>
+					<div class="emoji" title="trigram for lake">☱</div>
+					<div class="emoji" title="wheel of dharma">☸</div>
+					<div class="emoji" title="リラックス">☺</div>
+					<div class="emoji" title="black smiling face">☻</div>
+					<div class="emoji" title="牡羊座">♈</div>
+					<div class="emoji" title="牡牛座">♉</div>
+					<div class="emoji" title="双子座">♊</div>
+					<div class="emoji" title="獅子座">♌</div>
+					<div class="emoji" title="乙女座">♍</div>
+					<div class="emoji" title="天秤座">♎</div>
+					<div class="emoji" title="Sagittarius">♐</div>
+					<div class="emoji" title="射手座">♐</div>
+					<div class="emoji" title="山羊座">♑</div>
+					<div class="emoji" title="水瓶座">♒</div>
+					<div class="emoji" title="white chess king">♔</div>
+					<div class="emoji" title="white chess rook">♖</div>
+					<div class="emoji" title="ビショップ(白)">♗</div>
+					<div class="emoji" title="ルーク(黒)">♜</div>
+					<div class="emoji" title="クラブ">♣</div>
+					<div class="emoji" title="ハート">♥</div>
+					<div class="emoji" title="ダイヤ">♦</div>
+					<div class="emoji" title="hotsprings">♨</div>
+					<div class="emoji" title="ナチュラル">♮</div>
+					<div class="emoji" title="hammer and pick">⚒</div>
+					<div class="emoji" title="anchor">⚓</div>
+					<div class="emoji" title="weighing scales">⚖</div>
+					<div class="emoji" title="天秤">⚖</div>
+					<div class="emoji" title="gear">⚙</div>
+					<div class="emoji" title="イナズマ">⚡</div>
+					<div class="emoji" title="同性愛(女性)">⚢</div>
+					<div class="emoji" title="同性愛(男性)">⚣</div>
+					<div class="emoji" title="marriage symbol">⚭</div>
+					<div class="emoji" title="結婚マーク">⚭</div>
+					<div class="emoji" title="離婚マーク">⚮</div>
+					<div class="emoji" title="未婚マーク">⚯</div>
+					<div class="emoji" title="中性マーク">⚲</div>
+					<div class="emoji" title="サッカー">⚽</div>
+					<div class="emoji" title="partly sunny">⛅</div>
+					<div class="emoji" title="蛇遣い座">⛎</div>
+					<div class="emoji" title="チェーン規制">⛓</div>
+					<div class="emoji" title="no entry">⛔</div>
+					<div class="emoji" title="ゴルフ">⛳</div>
+					<div class="emoji" title="sailboat">⛵</div>
+					<div class="emoji" title="アイススケート">⛸</div>
+					<div class="emoji" title="person with ball">⛹</div>
+					<div class="emoji" title="テント">⛺</div>
+					<div class="emoji" title="はさみ">✂</div>
+					<div class="emoji" title="グー">✊</div>
+					<div class="emoji" title="パー">✋</div>
+					<div class="emoji" title="チョキ">✌</div>
+					<div class="emoji" title="キラリ">✳</div>
+					<div class="emoji" title="キラリ2">✴</div>
+					<div class="emoji" title="雪の結晶">❄</div>
+					<div class="emoji" title="question">❓</div>
+					<div class="emoji" title="exclamation">❗</div>
+					<div class="emoji" title="curly loop">➰</div>
+					<div class="emoji" title="くるり">➰</div>
+					<div class="emoji" title="arrow left">⬅</div>
+					<div class="emoji" title="arrow up">⬆</div>
+					<div class="emoji" title="arrow down">⬇</div>
+					<div class="emoji" title="wavy dash">〰</div>
+					<div class="emoji" title="祝マーク">㊗</div>
+					<div class="emoji" title="sandwich">🥪</div>
+					<div class="emoji" title="ハリネズミ">🦔</div>
+					<div class="emoji" title="head scarf">🧕</div>
+					<div class="emoji" title="ヘッドスカーフ">🧕</div>
+					<div class="emoji" title="slightly smiling face">🙂</div>
+					<div class="emoji" title="person bowing">🙇</div>
+					<div class="emoji" title="puke">🤮</div>
+					<div class="emoji" title="cloud with lightning and rain">⛈</div>
+					<div class="emoji" title="hammer wrench">🛠</div>
+					<div class="emoji" title="ハンマーとレンチ">🛠</div>
+					<div class="emoji" title="shield">🛡</div>
+					<div class="emoji" title="盾">🛡</div>
+					<div class="emoji" title="bed">🛏</div>
+					<div class="emoji" title="ベッド">🛏</div>
+					<div class="emoji" title="oil drum">🛢</div>
+					<div class="emoji" title="ドラム缶">🛢</div>
+					<div class="emoji" title="call bell">🛎</div>
+					<div class="emoji" title="卓上ベル">🛎</div>
+					<div class="emoji" title="cut of meat">🥩</div>
+					<div class="emoji" title="厚切り肉">🥩</div>
+					<div class="emoji" title="謝る人">🙇</div>
+					<div class="emoji" title="person facepalming">🤦</div>
+					<div class="emoji" title="あっちゃー">🤦</div>
+					<div class="emoji" title="しょんぼりしている人">🙍</div>
+					<div class="emoji" title="person pouting">🙎</div>
+					<div class="emoji" title="ぷんぷんしている人">🙎</div>
+					<div class="emoji" title="person gesturing no">🙅</div>
+					<div class="emoji" title="person gesturing ok">🙆</div>
+					<div class="emoji" title="person shrugging">🤷</div>
+					<div class="emoji" title="肩をすくめている人">🤷</div>
+					<div class="emoji" title="person tipping hand">💁</div>
+					<div class="emoji" title="案内人">💁</div>
+					<div class="emoji" title="airplane departing">🛫</div>
+					<div class="emoji" title="飛行機の出発">🛫</div>
+					<div class="emoji" title="airplane arriving">🛬</div>
+					<div class="emoji" title="飛行機の到着">🛬</div>
+					<div class="emoji" title="frowning face">☹</div>
+					<div class="emoji" title="slightly frowning">🙁</div>
+					<div class="emoji" title="slightly smiling">🙂</div>
+					<div class="emoji" title="stopwatch">⏱</div>
+					<div class="emoji" title="ストップウォッチ">⏱</div>
+					<div class="emoji" title="timer">⏲</div>
+					<div class="emoji" title="タイマー">⏲</div>
+					<div class="emoji" title="pretzel">🥨</div>
+					<div class="emoji" title="プレッツェル">🥨</div>
+					<div class="emoji" title="鈴虫">🦗</div>
+					<div class="emoji" title="canned food">🥫</div>
+					<div class="emoji" title="缶詰">🥫</div>
+					<div class="emoji" title="bowl with spoon">🥣</div>
+					<div class="emoji" title="ボウルとスプーン">🥣</div>
+					<div class="emoji" title="ox">🐂</div>
+					<div class="emoji" title="satellite antenna">📡</div>
+					<div class="emoji" title="couch and lamp">🛋</div>
+					<div class="emoji" title="ソファと照明器具">🛋</div>
+					<div class="emoji" title="shopping bags">🛍</div>
+					<div class="emoji" title="買い物袋">🛍</div>
+					<div class="emoji" title="motorway">🛣</div>
+					<div class="emoji" title="高速道路">🛣</div>
+					<div class="emoji" title="railway track">🛤</div>
+					<div class="emoji" title="鉄道">🛤</div>
+					<div class="emoji" title="small airplane">🛩</div>
+					<div class="emoji" title="小型飛行機">🛩</div>
+					<div class="emoji" title="passenger ship">🛳</div>
+					<div class="emoji" title="旅客船">🛳</div>
+					<div class="emoji" title="eject button">⏏</div>
+					<div class="emoji" title="取り出しボタン">⏏</div>
+					<div class="emoji" title="next track button">⏭</div>
+					<div class="emoji" title="previous track button">⏮</div>
+					<div class="emoji" title="前トラックボタン">⏮</div>
+					<div class="emoji" title="play or pause button">⏯</div>
+					<div class="emoji" title="再生一時停止ボタン">⏯</div>
+					<div class="emoji" title="pause button">⏸</div>
+					<div class="emoji" title="一時停止ボタン">⏸</div>
+					<div class="emoji" title="stop button">⏹</div>
+					<div class="emoji" title="停止ボタン">⏹</div>
+					<div class="emoji" title="record button">⏺</div>
+					<div class="emoji" title="録ボタン">⏺</div>
+					<div class="emoji" title="shamrock">☘</div>
+					<div class="emoji" title="mountain">⛰</div>
+					<div class="emoji" title="ferry">⛴</div>
+					<div class="emoji" title="cup with straw">🥤</div>
+					<div class="emoji" title="scarf">🧣</div>
+					<div class="emoji" title="sauropod">🦕</div>
+				</div>
+				<!-- Ende Emojisuchresultate -->
+			</div>
+			<div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+		</div>
+
+	</div>
+</body>
+
+</html>

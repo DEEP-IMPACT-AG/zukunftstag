@@ -1,0 +1,32 @@
+
+#term {
+	width: 300px;
+	text-align: center;
+}
+#term.flipped .text {
+	display: block;
+}
+#term.flipped .emojis {
+	display: none;
+}
+
+.text {
+	display: none;
+	font-size: 20px;
+}
+.emojis {
+	font-size: 30px;
+}
+
+.text,
+.emojis {
+	margin: 20px 0;
+}
+
+.flip {
+	width: 100%;
+}
+
+#next {
+	float: right;
+}

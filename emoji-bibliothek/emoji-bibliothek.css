@@ -1,0 +1,46 @@
+
+.emoji-loading {
+  display: inline-block;
+  width: 64px;
+  height: 64px;
+	margin: auto;
+}
+.emoji-loading:after {
+  content: " ";
+  display: block;
+  width: 46px;
+  height: 46px;
+  margin: 1px;
+  border-radius: 50%;
+  border: 5px solid #f16521;
+  border-color: #f16521 transparent #f16521 transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+#emoji-results,
+#emoji-search-results {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.emoji-emoji {
+	width: 30px;
+}
+
+.emoji-empty {
+	width: 100%;
+}
+
+.emoji { 
+	padding: 4px;
+	font-size: 30px;
+}
