@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Zukunftstag bei Deep Impact!</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+	 crossorigin="anonymous">
+	<link rel="stylesheet" href="../../global.css" />
+	<link rel="stylesheet" href="./emojispiel.css" />
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+	 crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+	 crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+	 crossorigin="anonymous"></script>
+	<script src="./emojispiel.js" type="application/javascript"></script>
+</head>
+
+<body>
+	<div class="content">
+
+		<nav aria-label="breadcrumb" class="mt-2">
+			<ol class="breadcrumb">
+				<li class="breadcrumb-item" aria-current="page"><a href="../../index.html">Übersicht</a></li>
+				<li class="breadcrumb-item" aria-current="page"><a href="../index.html">Leroy Reed</a></li>
+				<li class="breadcrumb-item active" aria-current="page">Emoji-Spiel Vorbereitung</li>
+			</ol>
+		</nav>
+
+		<h1 class="display-3 my-5 text-center">Emoji-Spiel Vorbereitung</h1>
+
+		<!-- Start Auflistung Begriffe -->
+		<div id="term-container">
+			<div class="term" id="term-example">
+				<span class="text"></span>
+				<span class="emojis"></span>
+				<button class="delete btn btn-danger btn-sm">
+					Löschen
+				</button>
+			</div>
+		</div>
+		<!-- Ende Auflistung Begriffe -->
+
+		<!-- Start Beriffseingabe -->
+		<div class="input-group mb-3">
+			<input type="text" class="form-control" id="card-text" placeholder="Begriff">
+			<input type="text" class="form-control" id="card-emojis" placeholder="Emojis">
+			<div class="input-group-append">
+				<!-- TODO: ONCLICK HINZUFÜGEN => saveNewCard(), https://www.w3schools.com/jsref/event_onclick.asp -->
+				<button type="button" class="btn btn-primary" id="card-save">Begriff speichern</button>
+			</div>
+		</div>
+		<!-- Ende Beriffseingabe -->
+
+		<!-- TODO: LINK ZUM SPIEL EINFÜGEN -->
+
+	</div>
+</body>
+
+</html>

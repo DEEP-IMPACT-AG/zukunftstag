@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Zukunftstag bei Deep Impact!</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+	 crossorigin="anonymous">
+	<link rel="stylesheet" href="../../global.css" />
+	<link rel="stylesheet" href="./play.css" />
+	<script src="./play.js" type="application/javascript"></script>
+</head>
+
+<body>
+	<div class="content">
+
+		<nav aria-label="breadcrumb" class="mt-2">
+			<ol class="breadcrumb">
+				<li class="breadcrumb-item" aria-current="page"><a href="../../index.html">Übersicht</a></li>
+				<li class="breadcrumb-item" aria-current="page"><a href="../index.html">Damian Küng</a></li>
+				<li class="breadcrumb-item" aria-current="page"><a href="./emojispiel.html">Emoji-Spiel Vorbereitung</a></li>
+				<li class="breadcrumb-item active" aria-current="page">Spielen</li>
+			</ol>
+		</nav>
+
+		<h1 class="display-3 my-5 text-center">Emoji-Spiel</h1>
+	
+		<!-- Start Auflistung Begriffe -->
+		<div id="term" class="card mx-auto clearfix">
+			<div class="card-body">
+				<div class="text">Begriff</div>
+				<div class="emojis">Emojis</div>
+				<button type="button" class="flip btn btn-primary btn-sm">Karte umkehren</button>
+			</div>
+		</div>
+		
+		<!-- TODO: ONCLICK HINZUFÜGEN => renderPrevCard(), https://www.w3schools.com/jsref/event_onclick.asp -->
+		<button type="button" class="btn btn-primary btn-sm" id="prev">Vorheriger Begriff</button>
+		
+		<!-- TODO: ONCLICK HINZUFÜGEN => renderNextCard(), https://www.w3schools.com/jsref/event_onclick.asp -->
+		<button type="button" class="btn btn-primary btn-sm" id="next">Nächster Begriff</button>
+		
+		<!-- Ende Auflistung Begriffe -->
+	</div>
+</body>
+
+</html>

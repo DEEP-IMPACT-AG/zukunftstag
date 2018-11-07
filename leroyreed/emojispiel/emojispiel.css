@@ -1,0 +1,22 @@
+
+#term-container {
+	margin: 20px 0;
+}
+
+#term-example {
+	display: none;
+}
+
+.term {
+	display: flex;
+	padding: .75rem 1rem;
+	border-radius: .25rem;
+}
+
+.term > span {
+	flex: 1;
+}
+
+.term:hover {
+	background-color: #e9ecef;
+}
